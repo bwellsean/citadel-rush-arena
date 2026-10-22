@@ -10,7 +10,7 @@ from PIL import Image, ImageDraw, ImageFont, ImageFilter
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.join(HERE, '..', 'repo')
 BASE = 'https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/'
-VERSION = '1'
+VERSION = '2'
 
 kit = json.load(open(os.path.join(HERE, 'kitdata.json')))
 rarity = json.load(open(os.path.join(HERE, 'rarity.json')))
@@ -150,7 +150,8 @@ for row in range(1, ROWS + 1):
     for l in LANES:
         sections[cell(l, row)] = {
             'isHidden': 'no', 'height': cell_h, 'alignment': 'CENTER',
-            'displayedTitle': f'{l}{row}', 'noQuickActions': True,
+            'displayedTitle': f'{l}{row}' + (' · P1 back row' if row == 1 and l == 'C' else ' · P2 back row' if row == ROWS and l == 'C' else ''),
+            'noQuickActions': True,
         }
 sections['Halcyte'] = {
     'isHidden': 'no', 'height': 9, 'alignment': 'START', 'displayedTitle': 'Halcyte (available)',
@@ -163,8 +164,9 @@ sections['Mana'] = {
 
 help_text = (
     "CITADEL RUSH quick reference\n"
-    "Board: 5 lanes (A-E) x 6 rows. Row 1 and 2 and 3 are Player 1's half, rows 4 to 6 are Player 2's half. "
-    "Each Citadel sits beyond its owner's back row. Bring the enemy Citadel (your counter) from 15 to 0 to win.\n"
+    "Board: 5 lanes (A-E) x 6 rows, shown the same way on both screens. Player 1 (the host, first seat) owns rows 1 to 3 at the bottom "
+    "and moves up. Player 2 owns rows 4 to 6 at the top and moves down. Each Citadel sits beyond its owner's back row "
+    "(row 1 for Player 1, row 6 for Player 2). Bring the enemy Citadel from 15 to 0 to win; track your own Citadel Health on your counter.\n"
     "Halcyte: you start with 6 in your supply. Turn 1 you have 1 (second player: 2), then 1 more each turn, max 6. "
     "At the start of your turn drag 1 from the supply to Available. Tap a Halcyte to spend it; they untap each turn.\n"
     "Turn: Draw 1. Main phase: deploy up to 1 Runner on an empty square of your back row, play any Traps, Upgrades and Protocols you can pay for, "

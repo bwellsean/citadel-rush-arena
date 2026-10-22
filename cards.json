@@ -6,7 +6,7 @@
     "name": "Aegis",
     "type": "Runner",
     "cost": 3,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/aegis.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/aegis.webp?v=2"
    }
   },
   "name": "Aegis",
@@ -27,7 +27,7 @@
     "name": "Waypoint",
     "type": "Runner",
     "cost": 1,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/waypoint.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/waypoint.webp?v=2"
    }
   },
   "name": "Waypoint",
@@ -48,7 +48,7 @@
     "name": "Tinder",
     "type": "Runner",
     "cost": 3,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/tinder.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/tinder.webp?v=2"
    }
   },
   "name": "Tinder",
@@ -69,7 +69,7 @@
     "name": "Zenith",
     "type": "Runner",
     "cost": 5,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/zenith.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/zenith.webp?v=2"
    }
   },
   "name": "Zenith",
@@ -90,7 +90,7 @@
     "name": "Lumen",
     "type": "Runner",
     "cost": 1,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/lumen.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/lumen.webp?v=2"
    }
   },
   "name": "Lumen",
@@ -111,7 +111,7 @@
     "name": "Blink",
     "type": "Runner",
     "cost": 2,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/blink.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/blink.webp?v=2"
    }
   },
   "name": "Blink",
@@ -132,7 +132,7 @@
     "name": "Anvil",
     "type": "Runner",
     "cost": 3,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/anvil.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/anvil.webp?v=2"
    }
   },
   "name": "Anvil",
@@ -153,7 +153,7 @@
     "name": "Lockstep",
     "type": "Runner",
     "cost": 3,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/lockstep.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/lockstep.webp?v=2"
    }
   },
   "name": "Lockstep",
@@ -174,7 +174,7 @@
     "name": "Gremlin",
     "type": "Runner",
     "cost": 1,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/gremlin.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/gremlin.webp?v=2"
    }
   },
   "name": "Gremlin",
@@ -195,7 +195,7 @@
     "name": "Hornet",
     "type": "Runner",
     "cost": 2,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/hornet.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/hornet.webp?v=2"
    }
   },
   "name": "Hornet",
@@ -216,7 +216,7 @@
     "name": "Faedra",
     "type": "Runner",
     "cost": 6,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/faedra.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/faedra.webp?v=2"
    }
   },
   "name": "Faedra",
@@ -237,7 +237,7 @@
     "name": "Herald",
     "type": "Runner",
     "cost": 2,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/herald.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/herald.webp?v=2"
    }
   },
   "name": "Herald",
@@ -258,7 +258,7 @@
     "name": "Arc",
     "type": "Runner",
     "cost": 3,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/arc.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/arc.webp?v=2"
    }
   },
   "name": "Arc",
@@ -279,7 +279,7 @@
     "name": "Aria",
     "type": "Runner",
     "cost": 5,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/aria.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/aria.webp?v=2"
    }
   },
   "name": "Aria",
@@ -300,7 +300,7 @@
     "name": "Cadence",
     "type": "Runner",
     "cost": 2,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/cadence.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/cadence.webp?v=2"
    }
   },
   "name": "Cadence",
@@ -321,7 +321,7 @@
     "name": "Vault",
     "type": "Runner",
     "cost": 3,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/vault.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/vault.webp?v=2"
    }
   },
   "name": "Vault",
@@ -342,7 +342,7 @@
     "name": "Bastion",
     "type": "Runner",
     "cost": 5,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/bastion.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/bastion.webp?v=2"
    }
   },
   "name": "Bastion",
@@ -363,7 +363,7 @@
     "name": "Spyglass",
     "type": "Runner",
     "cost": 1,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/spyglass.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/spyglass.webp?v=2"
    }
   },
   "name": "Spyglass",
@@ -384,7 +384,7 @@
     "name": "Leviathan",
     "type": "Runner",
     "cost": 6,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/leviathan.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/leviathan.webp?v=2"
    }
   },
   "name": "Leviathan",
@@ -405,7 +405,7 @@
     "name": "Vantage",
     "type": "Runner",
     "cost": 2,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/vantage.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/vantage.webp?v=2"
    }
   },
   "name": "Vantage",
@@ -426,7 +426,7 @@
     "name": "Tripwire",
     "type": "Runner",
     "cost": 3,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/tripwire.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/tripwire.webp?v=2"
    }
   },
   "name": "Tripwire",
@@ -447,7 +447,7 @@
     "name": "Sleight",
     "type": "Runner",
     "cost": 1,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/sleight.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/sleight.webp?v=2"
    }
   },
   "name": "Sleight",
@@ -468,7 +468,7 @@
     "name": "Payload",
     "type": "Runner",
     "cost": 4,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/payload.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/payload.webp?v=2"
    }
   },
   "name": "Payload",
@@ -489,7 +489,7 @@
     "name": "Breaker",
     "type": "Runner",
     "cost": 6,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/breaker.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/breaker.webp?v=2"
    }
   },
   "name": "Breaker",
@@ -510,7 +510,7 @@
     "name": "Hangar",
     "type": "Runner",
     "cost": 5,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/hangar.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/hangar.webp?v=2"
    }
   },
   "name": "Hangar",
@@ -531,7 +531,7 @@
     "name": "Drone Pilot",
     "type": "Runner",
     "cost": 1,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/drone-pilot.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/drone-pilot.webp?v=2"
    }
   },
   "name": "Drone Pilot",
@@ -552,7 +552,7 @@
     "name": "Swarm Drone",
     "type": "Runner",
     "cost": 1,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/swarm-drone.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/swarm-drone.webp?v=2"
    }
   },
   "name": "Swarm Drone",
@@ -573,7 +573,7 @@
     "name": "Hammerhead",
     "type": "Runner",
     "cost": 5,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/hammerhead.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/hammerhead.webp?v=2"
    }
   },
   "name": "Hammerhead",
@@ -594,7 +594,7 @@
     "name": "Trailblazer",
     "type": "Runner",
     "cost": 5,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/trailblazer.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/trailblazer.webp?v=2"
    }
   },
   "name": "Trailblazer",
@@ -615,7 +615,7 @@
     "name": "Flashpoint",
     "type": "Runner",
     "cost": 2,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/flashpoint.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/flashpoint.webp?v=2"
    }
   },
   "name": "Flashpoint",
@@ -636,7 +636,7 @@
     "name": "Mortar",
     "type": "Runner",
     "cost": 4,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/mortar.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/mortar.webp?v=2"
    }
   },
   "name": "Mortar",
@@ -657,7 +657,7 @@
     "name": "Spire",
     "type": "Runner",
     "cost": 4,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/spire.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/spire.webp?v=2"
    }
   },
   "name": "Spire",
@@ -678,7 +678,7 @@
     "name": "Hook",
     "type": "Runner",
     "cost": 2,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/hook.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/hook.webp?v=2"
    }
   },
   "name": "Hook",
@@ -699,7 +699,7 @@
     "name": "Sapper",
     "type": "Runner",
     "cost": 5,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/sapper.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/sapper.webp?v=2"
    }
   },
   "name": "Sapper",
@@ -720,7 +720,7 @@
     "name": "Riposte",
     "type": "Runner",
     "cost": 4,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/riposte.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/riposte.webp?v=2"
    }
   },
   "name": "Riposte",
@@ -741,7 +741,7 @@
     "name": "Tailwind",
     "type": "Runner",
     "cost": 3,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/tailwind.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/tailwind.webp?v=2"
    }
   },
   "name": "Tailwind",
@@ -762,7 +762,7 @@
     "name": "Relay Drone",
     "type": "Runner",
     "cost": 1,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/relay-drone.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/relay-drone.webp?v=2"
    }
   },
   "name": "Relay Drone",
@@ -783,7 +783,7 @@
     "name": "Scrapper",
     "type": "Runner",
     "cost": 3,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/scrapper.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/scrapper.webp?v=2"
    }
   },
   "name": "Scrapper",
@@ -804,7 +804,7 @@
     "name": "Swarmcaller",
     "type": "Runner",
     "cost": 4,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/swarmcaller.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/swarmcaller.webp?v=2"
    }
   },
   "name": "Swarmcaller",
@@ -825,7 +825,7 @@
     "name": "Warden",
     "type": "Runner",
     "cost": 5,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/warden.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/warden.webp?v=2"
    }
   },
   "name": "Warden",
@@ -846,7 +846,7 @@
     "name": "Shield Recruit",
     "type": "Runner",
     "cost": 1,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/shield-recruit.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/shield-recruit.webp?v=2"
    }
   },
   "name": "Shield Recruit",
@@ -867,7 +867,7 @@
     "name": "Stalwart Recruit",
     "type": "Runner",
     "cost": 1,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/stalwart-recruit.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/stalwart-recruit.webp?v=2"
    }
   },
   "name": "Stalwart Recruit",
@@ -888,7 +888,7 @@
     "name": "Conduit",
     "type": "Runner",
     "cost": 1,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/conduit.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/conduit.webp?v=2"
    }
   },
   "name": "Conduit",
@@ -909,7 +909,7 @@
     "name": "Spool",
     "type": "Runner",
     "cost": 2,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/spool.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/spool.webp?v=2"
    }
   },
   "name": "Spool",
@@ -930,7 +930,7 @@
     "name": "Avenger",
     "type": "Runner",
     "cost": 4,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/avenger.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/avenger.webp?v=2"
    }
   },
   "name": "Avenger",
@@ -951,7 +951,7 @@
     "name": "Ember",
     "type": "Runner",
     "cost": 2,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/ember.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/ember.webp?v=2"
    }
   },
   "name": "Ember",
@@ -972,7 +972,7 @@
     "name": "Geode",
     "type": "Runner",
     "cost": 3,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/geode.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/geode.webp?v=2"
    }
   },
   "name": "Geode",
@@ -993,7 +993,7 @@
     "name": "Raider",
     "type": "Runner",
     "cost": 3,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/raider.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/raider.webp?v=2"
    }
   },
   "name": "Raider",
@@ -1014,7 +1014,7 @@
     "name": "Welder",
     "type": "Runner",
     "cost": 2,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/welder.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/welder.webp?v=2"
    }
   },
   "name": "Welder",
@@ -1035,7 +1035,7 @@
     "name": "Ballast",
     "type": "Runner",
     "cost": 3,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/ballast.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/ballast.webp?v=2"
    }
   },
   "name": "Ballast",
@@ -1056,7 +1056,7 @@
     "name": "Rampart",
     "type": "Runner",
     "cost": 4,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/rampart.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/rampart.webp?v=2"
    }
   },
   "name": "Rampart",
@@ -1077,7 +1077,7 @@
     "name": "Cutter",
     "type": "Runner",
     "cost": 3,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/cutter.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/cutter.webp?v=2"
    }
   },
   "name": "Cutter",
@@ -1098,7 +1098,7 @@
     "name": "Pilfer",
     "type": "Runner",
     "cost": 2,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/pilfer.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/pilfer.webp?v=2"
    }
   },
   "name": "Pilfer",
@@ -1119,7 +1119,7 @@
     "name": "Sellsword",
     "type": "Runner",
     "cost": 3,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/sellsword.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/sellsword.webp?v=2"
    }
   },
   "name": "Sellsword",
@@ -1140,7 +1140,7 @@
     "name": "Bounty Hunter",
     "type": "Runner",
     "cost": 4,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/bounty-hunter.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/bounty-hunter.webp?v=2"
    }
   },
   "name": "Bounty Hunter",
@@ -1161,7 +1161,7 @@
     "name": "The Wanderer",
     "type": "Runner",
     "cost": 5,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/the-wanderer.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/the-wanderer.webp?v=2"
    }
   },
   "name": "The Wanderer",
@@ -1182,7 +1182,7 @@
     "name": "Ambush Alarm",
     "type": "Trap",
     "cost": 1,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/ambush-alarm.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/ambush-alarm.webp?v=2"
    }
   },
   "name": "Ambush Alarm",
@@ -1198,7 +1198,7 @@
     "name": "Suppression Mine",
     "type": "Trap",
     "cost": 1,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/suppression-mine.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/suppression-mine.webp?v=2"
    }
   },
   "name": "Suppression Mine",
@@ -1214,7 +1214,7 @@
     "name": "Frag Mine",
     "type": "Trap",
     "cost": 2,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/frag-mine.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/frag-mine.webp?v=2"
    }
   },
   "name": "Frag Mine",
@@ -1230,7 +1230,7 @@
     "name": "Repulsor Plate",
     "type": "Trap",
     "cost": 1,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/repulsor-plate.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/repulsor-plate.webp?v=2"
    }
   },
   "name": "Repulsor Plate",
@@ -1246,7 +1246,7 @@
     "name": "EMP Spike",
     "type": "Trap",
     "cost": 1,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/emp-spike.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/emp-spike.webp?v=2"
    }
   },
   "name": "EMP Spike",
@@ -1262,7 +1262,7 @@
     "name": "Drain Spike",
     "type": "Trap",
     "cost": 1,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/drain-spike.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/drain-spike.webp?v=2"
    }
   },
   "name": "Drain Spike",
@@ -1278,7 +1278,7 @@
     "name": "Decoy",
     "type": "Trap",
     "cost": 1,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/decoy.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/decoy.webp?v=2"
    }
   },
   "name": "Decoy",
@@ -1294,7 +1294,7 @@
     "name": "Snare",
     "type": "Trap",
     "cost": 1,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/snare.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/snare.webp?v=2"
    }
   },
   "name": "Snare",
@@ -1310,7 +1310,7 @@
     "name": "Rift Tear",
     "type": "Trap",
     "cost": 3,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/rift-tear.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/rift-tear.webp?v=2"
    }
   },
   "name": "Rift Tear",
@@ -1326,7 +1326,7 @@
     "name": "Halcyte Leak",
     "type": "Trap",
     "cost": 2,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/halcyte-leak.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/halcyte-leak.webp?v=2"
    }
   },
   "name": "Halcyte Leak",
@@ -1342,7 +1342,7 @@
     "name": "Sanctuary Glyph",
     "type": "Trap",
     "cost": 1,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/sanctuary-glyph.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/sanctuary-glyph.webp?v=2"
    }
   },
   "name": "Sanctuary Glyph",
@@ -1358,7 +1358,7 @@
     "name": "Mirror Ward",
     "type": "Trap",
     "cost": 2,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/mirror-ward.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/mirror-ward.webp?v=2"
    }
   },
   "name": "Mirror Ward",
@@ -1374,7 +1374,7 @@
     "name": "Stasis Cage",
     "type": "Trap",
     "cost": 2,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/stasis-cage.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/stasis-cage.webp?v=2"
    }
   },
   "name": "Stasis Cage",
@@ -1390,7 +1390,7 @@
     "name": "Claymore",
     "type": "Trap",
     "cost": 2,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/claymore.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/claymore.webp?v=2"
    }
   },
   "name": "Claymore",
@@ -1406,7 +1406,7 @@
     "name": "Overload Coil",
     "type": "Trap",
     "cost": 1,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/overload-coil.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/overload-coil.webp?v=2"
    }
   },
   "name": "Overload Coil",
@@ -1422,7 +1422,7 @@
     "name": "Blast Barricade",
     "type": "Trap",
     "cost": 2,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/blast-barricade.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/blast-barricade.webp?v=2"
    }
   },
   "name": "Blast Barricade",
@@ -1438,7 +1438,7 @@
     "name": "Hero's Sacrifice",
     "type": "Protocol",
     "cost": 2,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/heros-sacrifice.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/heros-sacrifice.webp?v=2"
    }
   },
   "name": "Hero's Sacrifice",
@@ -1454,7 +1454,7 @@
     "name": "Shield Wall",
     "type": "Protocol",
     "cost": 1,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/shield-wall.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/shield-wall.webp?v=2"
    }
   },
   "name": "Shield Wall",
@@ -1470,7 +1470,7 @@
     "name": "Breakaway",
     "type": "Protocol",
     "cost": 2,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/breakaway.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/breakaway.webp?v=2"
    }
   },
   "name": "Breakaway",
@@ -1486,7 +1486,7 @@
     "name": "Blinding Flare",
     "type": "Protocol",
     "cost": 2,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/blinding-flare.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/blinding-flare.webp?v=2"
    }
   },
   "name": "Blinding Flare",
@@ -1502,7 +1502,7 @@
     "name": "Arc Flash",
     "type": "Protocol",
     "cost": 2,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/arc-flash.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/arc-flash.webp?v=2"
    }
   },
   "name": "Arc Flash",
@@ -1518,7 +1518,7 @@
     "name": "Relay Beacon",
     "type": "Protocol",
     "cost": 2,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/relay-beacon.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/relay-beacon.webp?v=2"
    }
   },
   "name": "Relay Beacon",
@@ -1534,7 +1534,7 @@
     "name": "Rearm",
     "type": "Protocol",
     "cost": 2,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/rearm.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/rearm.webp?v=2"
    }
   },
   "name": "Rearm",
@@ -1550,7 +1550,7 @@
     "name": "Fortify",
     "type": "Protocol",
     "cost": 2,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/fortify.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/fortify.webp?v=2"
    }
   },
   "name": "Fortify",
@@ -1566,7 +1566,7 @@
     "name": "Rift Step",
     "type": "Protocol",
     "cost": 2,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/rift-step.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/rift-step.webp?v=2"
    }
   },
   "name": "Rift Step",
@@ -1582,7 +1582,7 @@
     "name": "Remote Detonation",
     "type": "Protocol",
     "cost": 2,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/remote-detonation.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/remote-detonation.webp?v=2"
    }
   },
   "name": "Remote Detonation",
@@ -1598,7 +1598,7 @@
     "name": "Field Intel",
     "type": "Protocol",
     "cost": 1,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/field-intel.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/field-intel.webp?v=2"
    }
   },
   "name": "Field Intel",
@@ -1614,7 +1614,7 @@
     "name": "Requisition",
     "type": "Protocol",
     "cost": 2,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/requisition.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/requisition.webp?v=2"
    }
   },
   "name": "Requisition",
@@ -1630,7 +1630,7 @@
     "name": "Patch Up",
     "type": "Protocol",
     "cost": 1,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/patch-up.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/patch-up.webp?v=2"
    }
   },
   "name": "Patch Up",
@@ -1646,7 +1646,7 @@
     "name": "Smoke Screen",
     "type": "Protocol",
     "cost": 2,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/smoke-screen.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/smoke-screen.webp?v=2"
    }
   },
   "name": "Smoke Screen",
@@ -1662,7 +1662,7 @@
     "name": "Overcharged Rounds",
     "type": "Upgrade",
     "cost": 2,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/overcharged-rounds.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/overcharged-rounds.webp?v=2"
    }
   },
   "name": "Overcharged Rounds",
@@ -1678,7 +1678,7 @@
     "name": "Hardened Frame",
     "type": "Upgrade",
     "cost": 2,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/hardened-frame.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/hardened-frame.webp?v=2"
    }
   },
   "name": "Hardened Frame",
@@ -1694,7 +1694,7 @@
     "name": "Rift Striders",
     "type": "Upgrade",
     "cost": 1,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/rift-striders.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/rift-striders.webp?v=2"
    }
   },
   "name": "Rift Striders",
@@ -1710,7 +1710,7 @@
     "name": "Emergency Stabilizer",
     "type": "Upgrade",
     "cost": 1,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/emergency-stabilizer.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/emergency-stabilizer.webp?v=2"
    }
   },
   "name": "Emergency Stabilizer",
@@ -1726,7 +1726,7 @@
     "name": "Field Radio",
     "type": "Upgrade",
     "cost": 1,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/field-radio.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/field-radio.webp?v=2"
    }
   },
   "name": "Field Radio",
@@ -1742,7 +1742,7 @@
     "name": "Medkit",
     "type": "Upgrade",
     "cost": 1,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/medkit.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/medkit.webp?v=2"
    }
   },
   "name": "Medkit",
@@ -1758,7 +1758,7 @@
     "name": "Recon Visor",
     "type": "Upgrade",
     "cost": 1,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/recon-visor.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/recon-visor.webp?v=2"
    }
   },
   "name": "Recon Visor",
@@ -1774,7 +1774,7 @@
     "name": "Halcyte Capacitor",
     "type": "Upgrade",
     "cost": 2,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/halcyte-capacitor.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/halcyte-capacitor.webp?v=2"
    }
   },
   "name": "Halcyte Capacitor",
@@ -1790,7 +1790,7 @@
     "name": "Ward Banner",
     "type": "Upgrade",
     "cost": 2,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/ward-banner.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/ward-banner.webp?v=2"
    }
   },
   "name": "Ward Banner",
@@ -1806,7 +1806,7 @@
     "name": "Courier Pack",
     "type": "Upgrade",
     "cost": 1,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/courier-pack.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/courier-pack.webp?v=2"
    }
   },
   "name": "Courier Pack",
@@ -1822,7 +1822,7 @@
     "name": "Prism Focus",
     "type": "Upgrade",
     "cost": 2,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/prism-focus.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/prism-focus.webp?v=2"
    }
   },
   "name": "Prism Focus",
@@ -1838,7 +1838,7 @@
     "name": "Uplink Module",
     "type": "Upgrade",
     "cost": 1,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/uplink-module.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/uplink-module.webp?v=2"
    }
   },
   "name": "Uplink Module",
@@ -1854,7 +1854,7 @@
     "name": "Charge Bandolier",
     "type": "Upgrade",
     "cost": 1,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/charge-bandolier.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/charge-bandolier.webp?v=2"
    }
   },
   "name": "Charge Bandolier",
@@ -1870,7 +1870,7 @@
     "name": "Heavy Plating",
     "type": "Upgrade",
     "cost": 3,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/heavy-plating.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/heavy-plating.webp?v=2"
    }
   },
   "name": "Heavy Plating",
@@ -1887,7 +1887,7 @@
     "name": "Halcyte",
     "type": "Halcyte",
     "cost": 0,
-    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/halcyte.webp?v=1"
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/halcyte.webp?v=2"
    }
   },
   "name": "Halcyte",
