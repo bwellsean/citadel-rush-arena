@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Citadel Rush card</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lilita+One&amp;family=Barlow:ital,wght@0,400;0,600;0,700;1,400&amp;family=Barlow+Condensed:wght@700&amp;display=swap">
+<style>
+body{margin:0;font-family:"Barlow","Helvetica Neue",sans-serif;color:#141413;background:transparent}
+a{color:#2c5282}a:hover{color:#1a365d}
+</style>
+</helmet>
+<div style="width: {{w}}px; height: {{h}}px; overflow: hidden">
+<div style="width: 250px; height: 350px; transform: scale({{sx}}, {{sy}}); transform-origin: 0 0">
+<sc-if value="{{isHalcyte}}" hint-placeholder-val="{{false}}">
+<div style="position: relative; width: 250px; height: 350px; box-sizing: border-box; border: 4px solid #15121c; border-radius: 15px; overflow: hidden; background: #e9c98f">
+<img src="/_blob/badb1233e2fcfaf03d9c5900ad033fac" alt="Halcyte resource card: a faceted gold crystal with a red-orange core bursting from a ruined street, the whole scene flooded with warm gold light" style="width: 100%; height: 100%; object-fit: cover; display: block">
+<div style="position: absolute; left: 50%; bottom: 14px; transform: translateX(-50%); background: #e8a93a; border: 2.5px solid #15121c; border-radius: 8px; padding: 2px 14px; font-family: 'Lilita One', sans-serif; font-size: 19px; letter-spacing: 0.12em; color: #2a1d08">HALCYTE</div>
+</div>
+</sc-if>
+<sc-if value="{{notHalcyte}}" hint-placeholder-val="{{true}}">
+<div style="position: relative; width: 250px; height: 350px; box-sizing: border-box; border: 4px solid #15121c; border-radius: 15px; background: {{c.frame}}; overflow: hidden">
+<sc-if value="{{c.fullArt}}" hint-placeholder-val="{{false}}"><img src="{{c.art}}" alt="" aria-hidden="true" style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(10px) brightness(0.55); transform: scale(1.12); display: block"><img src="{{c.art}}" alt="{{c.name}} full card art" style="position: absolute; left: 0; top: {{c.fullTop}}px; width: 100%; height: auto; display: block; -webkit-mask-image: linear-gradient(to bottom, #000 82%, transparent 100%); mask-image: linear-gradient(to bottom, #000 82%, transparent 100%)"></sc-if>
+
+<sc-if value="{{c.isChar}}" hint-placeholder-val="{{true}}">
+<div style="position: absolute; left: 0; top: 0; width: 242px; height: 20px; box-sizing: border-box; background: {{c.bgFull}}; border-bottom: 2px solid #15121c; display: flex; align-items: center; justify-content: center; gap: 6px; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 11px; letter-spacing: 0.08em; color: #0f2a14">
+<span>FULL</span>
+<span style="display: flex; align-items: center; gap: 1px" aria-label="Health"><sc-for list="{{c.h1}}" as="hh" hint-placeholder-count="3"><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3 4.5 6.7 4.5c2.1 0 3.6 1.2 5.3 3.1 1.7-1.9 3.2-3.1 5.3-3.1 3.7 0 5.8 3.9 4.3 7.3C19.5 16.4 12 21 12 21z" fill="#e8335a" stroke="#15121c" stroke-width="2.4" stroke-linejoin="round"></path></svg></sc-for></span>
+<span style="display: flex; align-items: center; gap: 3px; background: #15121c; border-radius: 4px; padding: 0 5px; line-height: 13px; color: #ffffff" title="Lethal: a single hit this big defeats it"><svg width="11" height="11" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5c-4.7 0-8 3.3-8 7.6 0 2.6 1.3 4.6 3.2 5.8v3.6h9.6v-3.6c1.9-1.2 3.2-3.2 3.2-5.8 0-4.3-3.3-7.6-8-7.6z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"></path><circle cx="8.8" cy="10.6" r="2" fill="currentColor"></circle><circle cx="15.2" cy="10.6" r="2" fill="currentColor"></circle><path d="M10.4 19.5v2M13.6 19.5v2" stroke="currentColor" stroke-width="2"></path></svg>{{c.def1}}+</span>
+</div>
+<div style="position: absolute; left: 0; top: 20px; width: 20px; height: {{leftH}}px; box-sizing: border-box; background: {{c.bgWound}}; border-right: 2px solid #15121c">
+<div style="position: absolute; left: 50%; top: 50%; width: {{leftH}}px; height: 18px; transform: translate(-50%, -50%) rotate(-90deg); display: flex; align-items: center; justify-content: center; gap: 6px; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 11px; letter-spacing: 0.08em; color: #2a1f00">
+<span>WOUNDED</span>
+<span style="display: flex; align-items: center; gap: 1px" aria-label="Health"><sc-for list="{{c.h2}}" as="hh" hint-placeholder-count="2"><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3 4.5 6.7 4.5c2.1 0 3.6 1.2 5.3 3.1 1.7-1.9 3.2-3.1 5.3-3.1 3.7 0 5.8 3.9 4.3 7.3C19.5 16.4 12 21 12 21z" fill="#e8335a" stroke="#15121c" stroke-width="2.4" stroke-linejoin="round"></path></svg></sc-for></span>
+<sc-if value="{{c.woundedHasDef}}" hint-placeholder-val="{{true}}">
+<span style="display: flex; align-items: center; gap: 3px; background: #15121c; border-radius: 4px; padding: 0 5px; line-height: 13px; color: #ffffff" title="Lethal: a single hit this big defeats it"><svg width="11" height="11" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5c-4.7 0-8 3.3-8 7.6 0 2.6 1.3 4.6 3.2 5.8v3.6h9.6v-3.6c1.9-1.2 3.2-3.2 3.2-5.8 0-4.3-3.3-7.6-8-7.6z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"></path><circle cx="8.8" cy="10.6" r="2" fill="currentColor"></circle><circle cx="15.2" cy="10.6" r="2" fill="currentColor"></circle><path d="M10.4 19.5v2M13.6 19.5v2" stroke="currentColor" stroke-width="2"></path></svg>{{c.def2}}+</span>
+</sc-if>
+<sc-if value="{{c.woundedIsLast}}" hint-placeholder-val="{{false}}">
+<span style="display: flex; align-items: center; gap: 3px; background: #15121c; border-radius: 4px; padding: 0 5px; line-height: 13px; color: #f2c12e"><svg width="11" height="11" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5c-4.7 0-8 3.3-8 7.6 0 2.6 1.3 4.6 3.2 5.8v3.6h9.6v-3.6c1.9-1.2 3.2-3.2 3.2-5.8 0-4.3-3.3-7.6-8-7.6z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"></path><circle cx="8.8" cy="10.6" r="2" fill="currentColor"></circle><circle cx="15.2" cy="10.6" r="2" fill="currentColor"></circle><path d="M10.4 19.5v2M13.6 19.5v2" stroke="currentColor" stroke-width="2"></path></svg>2+</span>
+</sc-if>
+</div>
+</div>
+<sc-if value="{{c.hasCrit}}" hint-placeholder-val="{{false}}">
+<div style="position: absolute; left: 0; bottom: 0; width: 242px; height: 20px; box-sizing: border-box; background: {{c.bgCrit}}; border-top: 2px solid #15121c">
+<div style="width: 242px; height: 18px; transform: rotate(180deg); display: flex; align-items: center; justify-content: center; gap: 6px; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 11px; letter-spacing: 0.08em; color: #ffffff">
+<span>CRITICAL</span>
+<span style="display: flex; align-items: center; gap: 1px" aria-label="Health"><sc-for list="{{c.h3}}" as="hh" hint-placeholder-count="1"><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3 4.5 6.7 4.5c2.1 0 3.6 1.2 5.3 3.1 1.7-1.9 3.2-3.1 5.3-3.1 3.7 0 5.8 3.9 4.3 7.3C19.5 16.4 12 21 12 21z" fill="#ffffff" stroke="#15121c" stroke-width="2.4" stroke-linejoin="round"></path></svg></sc-for></span>
+<sc-if value="{{c.critHasDef}}" hint-placeholder-val="{{false}}"><span style="display: flex; align-items: center; gap: 3px; background: #15121c; border-radius: 4px; padding: 0 5px; line-height: 13px; color: #ffffff" title="Lethal: a single hit this big defeats it"><svg width="11" height="11" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5c-4.7 0-8 3.3-8 7.6 0 2.6 1.3 4.6 3.2 5.8v3.6h9.6v-3.6c1.9-1.2 3.2-3.2 3.2-5.8 0-4.3-3.3-7.6-8-7.6z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"></path><circle cx="8.8" cy="10.6" r="2" fill="currentColor"></circle><circle cx="15.2" cy="10.6" r="2" fill="currentColor"></circle><path d="M10.4 19.5v2M13.6 19.5v2" stroke="currentColor" stroke-width="2"></path></svg>{{c.def3}}+</span></sc-if>
+<sc-if value="{{c.critIsLast}}" hint-placeholder-val="{{true}}"><span style="display: flex; align-items: center; gap: 3px; background: #15121c; border-radius: 4px; padding: 0 5px; line-height: 13px; color: #ffd0c4"><svg width="11" height="11" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5c-4.7 0-8 3.3-8 7.6 0 2.6 1.3 4.6 3.2 5.8v3.6h9.6v-3.6c1.9-1.2 3.2-3.2 3.2-5.8 0-4.3-3.3-7.6-8-7.6z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"></path><circle cx="8.8" cy="10.6" r="2" fill="currentColor"></circle><circle cx="15.2" cy="10.6" r="2" fill="currentColor"></circle><path d="M10.4 19.5v2M13.6 19.5v2" stroke="currentColor" stroke-width="2"></path></svg>2+</span></sc-if>
+</div>
+</div>
+</sc-if>
+<sc-if value="{{c.hasLast}}" hint-placeholder-val="{{false}}">
+<div style="position: absolute; right: 0; top: 20px; width: 20px; height: {{leftH}}px; box-sizing: border-box; background: {{c.bgLast}}; border-left: 2px solid #15121c">
+<div style="position: absolute; left: 50%; top: 50%; width: {{leftH}}px; height: 18px; transform: translate(-50%, -50%) rotate(90deg); display: flex; align-items: center; justify-content: center; gap: 6px; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 11px; letter-spacing: 0.08em; color: #ffffff">
+<span>LAST STAND</span>
+<span style="display: flex; align-items: center" aria-label="Health"><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3 4.5 6.7 4.5c2.1 0 3.6 1.2 5.3 3.1 1.7-1.9 3.2-3.1 5.3-3.1 3.7 0 5.8 3.9 4.3 7.3C19.5 16.4 12 21 12 21z" fill="#ffffff" stroke="#15121c" stroke-width="2.4" stroke-linejoin="round"></path></svg></span>
+<span style="display: flex; align-items: center; gap: 3px; background: #ffffff; border-radius: 4px; padding: 0 5px; line-height: 13px; color: #15121c"><svg width="11" height="11" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5c-4.7 0-8 3.3-8 7.6 0 2.6 1.3 4.6 3.2 5.8v3.6h9.6v-3.6c1.9-1.2 3.2-3.2 3.2-5.8 0-4.3-3.3-7.6-8-7.6z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"></path><circle cx="8.8" cy="10.6" r="2" fill="currentColor"></circle><circle cx="15.2" cy="10.6" r="2" fill="currentColor"></circle><path d="M10.4 19.5v2M13.6 19.5v2" stroke="currentColor" stroke-width="2"></path></svg>2+</span>
+</div>
+</div>
+</sc-if>
+</sc-if>
+
+<div style="position: absolute; left: {{box.l}}px; top: {{box.t}}px; width: {{box.w}}px; height: {{box.h}}px; display: flex; flex-direction: column; gap: 4px">
+<div style="display: flex; align-items: center; gap: 4px; flex-shrink: 0">
+<div style="flex: 1; min-width: 0; background: {{c.band}}; border: 2.5px solid #15121c; border-radius: 8px; padding: 1px 8px; font-family: 'Lilita One', sans-serif; font-size: {{c.nameSize}}px; line-height: 21px; text-transform: uppercase; color: {{c.bandInk}}; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{{c.name}}</div>
+<div title="{{c.costTitle}}" aria-label="{{c.costTitle}}" style="position: relative; width: 28px; height: 31px; flex-shrink: 0"><svg width="28" height="31" viewBox="0 0 34 38" aria-hidden="true" style="position: absolute; left: 0; top: 0; display: block" style="position: absolute; left: 0; top: 0; display: block"><polygon points="17,1.5 32,10 32,28 17,36.5 2,28 2,10" fill="#ffd36b" stroke="#15121c" stroke-width="2.5" stroke-linejoin="round"></polygon><polygon points="17,7 26.5,12.5 26.5,25.5 17,31 7.5,25.5 7.5,12.5" fill="#f29a2e"></polygon><polyline points="2,10 7.5,12.5 17,7 17,1.5" fill="none" stroke="#15121c" stroke-width="1" stroke-opacity="0.35"></polyline><polyline points="32,28 26.5,25.5 17,31 17,36.5" fill="none" stroke="#15121c" stroke-width="1" stroke-opacity="0.35"></polyline></svg><div style="position: absolute; left: 0; top: 0; width: 28px; height: 31px; display: flex; align-items: center; justify-content: center; font-family: 'Lilita One', sans-serif; font-size: 17px; line-height: 1; color: #15121c">{{c.cost}}</div></div>
+</div>
+<div style="flex: {{fit.art}}; aspect-ratio: {{fit.ar}}; min-height: 60px; border: 2.5px solid {{c.artBorder}}; border-radius: 6px; position: relative; overflow: hidden; background: {{c.artBg}}">
+<sc-if value="{{c.panelArt}}" hint-placeholder-val="{{true}}"><img src="{{c.art}}" alt="{{c.name}} card art" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% {{c.focus}}%; transform: scaleX({{c.flipX}}); display: block"></sc-if>
+<sc-if value="{{c.noArt}}" hint-placeholder-val="{{false}}"><div style="width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; background: repeating-linear-gradient(135deg, #2a2833 0 8px, #322f3d 8px 16px)"><div style="font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 12px; letter-spacing: 0.1em; color: {{c.accent}}">PLAYTEST CARD</div></div></sc-if>
+<sc-if value="{{c.isChar}}" hint-placeholder-val="{{true}}"><div style="position: absolute; right: 4px; top: 4px; display: flex; gap: 4px"><div style="background: {{c.chipBg}}; border: 2px solid #15121c; border-radius: 6px; padding: 0 5px; display: flex; align-items: baseline; gap: 2px; box-shadow: 0 2px 0 rgba(12, 10, 16, 0.5)"><span style="font-family: 'Lilita One', sans-serif; font-size: 15px; line-height: 18px; color: #c2361c">{{c.atk}}</span><span style="font-family: 'Barlow Condensed', sans-serif; font-size: 8px; font-weight: 700; color: #15121c">ATK</span></div><div style="background: {{c.chipBg}}; border: 2px solid #15121c; border-radius: 6px; padding: 0 5px; display: flex; align-items: baseline; gap: 2px; box-shadow: 0 2px 0 rgba(12, 10, 16, 0.5)"><span style="font-family: 'Lilita One', sans-serif; font-size: 15px; line-height: 18px; color: #2f8a3e">{{c.mov}}</span><span style="font-family: 'Barlow Condensed', sans-serif; font-size: 8px; font-weight: 700; color: #15121c">MOV</span></div></div></sc-if>
+<div style="position: absolute; left: 4px; right: 4px; bottom: 4px; display: flex"><div style="max-width: 100%; box-sizing: border-box; background: {{c.typeBg}}; color: {{c.accent}}; border-radius: 4px; padding: 1px 6px; font-family: 'Barlow Condensed', sans-serif; font-size: 9px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{{c.typeLine}}</div></div>
+</div>
+<div style="flex: {{fit.text}}; background: {{c.textBg}}; border: 2.5px solid #15121c; border-radius: 7px; padding: 4px 7px; color: {{c.textInk}}; display: flex; flex-direction: column; gap: 3px">
+<sc-if value="{{c.showPattern}}" hint-placeholder-val="{{false}}"><div style="font-size: {{c.textSize}}px; line-height: 1.22; color: {{c.subInk}}"><span style="font-weight: 700; text-transform: uppercase">Attacks:</span> {{c.pattern}}</div></sc-if>
+<div style="font-size: {{c.textSize}}px; line-height: 1.22"><span style="font-weight: 700; text-transform: uppercase; color: {{c.key}}">{{c.lead}}:</span> {{c.text}}</div>
+<sc-for list="{{c.extra}}" as="x" hint-placeholder-count="1"><div style="font-size: {{c.textSize}}px; line-height: 1.22"><span style="font-weight: 700; text-transform: uppercase; color: {{c.key}}">{{x.lead}}:</span> {{x.text}}</div></sc-for>
+<sc-if value="{{c.showLasts}}" hint-placeholder-val="{{false}}"><div style="font-size: {{c.textSize}}px; line-height: 1.22"><span style="font-weight: 700; text-transform: uppercase; color: {{c.key}}">Lasts:</span> {{c.duration}}</div></sc-if>
+<div style="font-size: 9px; font-style: {{c.footStyle}}; line-height: 1.22; color: {{c.footInk}}; white-space: {{c.footWrap}}; overflow: hidden; text-overflow: ellipsis">{{c.foot}}</div>
+</div>
+</div>
+
+</div>
+</sc-if>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"cardName":{"editor":"text","default":"Aegis"},"cardW":{"editor":"number","default":226},"cardH":{"editor":"number","default":322},"$preview":{"width":226,"height":322}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const trapHow = "Place face-down on an empty square in your half. Discard after it triggers.";
+    const upgradeHow = "Attach to one of your Runners on the board. Max 1 upgrade per Runner.";
+    const runners = [
+      { faction: "Sentinels", kind: "char", name: "Aegis", cost: 3, title: "Lenore", meta: "Sentinels · Powered · Tank", atk: 2, steps: [9, 5], mov: 1, pattern: "Default (adjacent enemy ahead)", ability: "Guardian", freq: "once per turn", text: "When a friendly Runner directly beside Aegis (same row, neighboring lane) is attacked, Aegis may take the attack instead and hit back.", flavor: "“Behind me. Stay behind me.”" },
+      { faction: "Sentinels", kind: "char", name: "Waypoint", cost: 1, title: "Wren", meta: "Sentinels · Tech · Scout", atk: 2, steps: [3], mov: 2, pattern: "Default (adjacent enemy ahead)", ability: "Clear the Path", freq: "once per turn", text: "Instead of attacking, choose a face-down enemy trap within 2 squares ahead in Waypoint's lane. Discard it without triggering it, or flip it face-up if a Runner is on it.", flavor: "“Every path through the rift has a trap on it. I just find it first.”" },
+      { faction: "Sentinels", kind: "char", name: "Tinder", cost: 3, title: "Kestrel", meta: "Sentinels · Powered · Striker", atk: 3, steps: [5], mov: 1, pattern: "Any square in the next row ahead: directly in front or diagonally ahead on either side", ability: "Overcharge", freq: "once per turn", text: "When Tinder attacks, he may add +3 damage. If he does, the target does not hit back, and Tinder takes 2 damage after the attack.", flavor: "“You got the brains. I got the fire.”" },
+      { faction: "Sentinels", kind: "char", name: "Zenith", cost: 5, title: "Solenne", meta: "Sentinels · Powered · Artillery", atk: 3, steps: [5], mov: 1, pattern: "Any square 2 to 3 ahead in her lane. Ignores Blockers on the square 2 ahead.", ability: "Radiant Barrage", freq: "once per game", text: "Instead of attacking, choose up to 2 enemy Runners ahead of Zenith in her lane. Each takes 2 damage. The closest one hits back.", flavor: "“Look up.”" },
+      { faction: "Sentinels", kind: "char", name: "Lumen", cost: 1, title: "Dr. Elias Marsh", meta: "Sentinels · Powered · Support", atk: 1, steps: [4], mov: 1, pattern: "Default (adjacent enemy ahead)", ability: "Purge", freq: "once per turn", text: "Instead of attacking, restore 1 Health to a friendly Runner next to Lumen. If it is Powered, also remove a trap effect from it (Stunned or Double Damage). Can't target the same Runner on back-to-back turns.", flavor: "“Hold still. This part glows.”" },
+      { faction: "Syndicate", kind: "char", name: "Blink", cost: 2, title: "Indira", meta: "Syndicate · Powered · Burst", atk: 4, steps: [3], mov: 1, pattern: "Default (adjacent enemy ahead)", ability: "Quick Strike", freq: "once per game", text: "Instead of attacking normally, Blink attacks the same target twice, each hit dealing 3 damage. The target hits back after each attack.", flavor: "“You blinked. That was your mistake.”" },
+      { faction: "Syndicate", kind: "char", name: "Anvil", cost: 3, title: "Gunnar", meta: "Syndicate · Tech · Heavy ranged", atk: 4, steps: [4], mov: 1, pattern: "1 or 2 squares ahead in his lane", ability: "Suppressive Fire", freq: "once per game", text: "Instead of attacking, stun each enemy in the next row ahead: the square directly in front of him and the squares diagonally ahead on each side. Lasts one round.", flavor: "“I don't need to hit you. I need you to stay down.”" },
+      { faction: "Syndicate", kind: "char", name: "Lockstep", cost: 3, title: "Rook", meta: "Syndicate · Tech · Lane defender", atk: 2, steps: [8, 4], mov: 1, pattern: "Default (adjacent enemy ahead)", ability: "Halcyte Plating", freq: "once per turn", text: "Plating 2 against the first attack from a Powered Runner each turn (that attack deals 2 less damage).", flavor: "“She kept us safe for years. Now it's our turn.”" },
+      { faction: "Syndicate", kind: "char", name: "Gremlin", cost: 1, title: "Silas Morrow", meta: "Syndicate · Tech · Engineer", atk: 2, steps: [4], mov: 1, pattern: "Default (adjacent enemy ahead)", ability: "Field Rigging", freq: "once per turn", text: "Instead of attacking, place a Trap from your hand face-down on an empty square next to Gremlin (any direction), even outside your half.", flavor: "“I've been building the end of the world for fifty years. I'm getting good at it.”" },
+      { faction: "Syndicate", kind: "char", name: "Hornet", cost: 2, title: "Mara Voss", meta: "Syndicate · Tech · Artillery", atk: 2, steps: [3], mov: 1, pattern: "Exactly 2 rows ahead, in her lane or a neighboring lane. Ignores Blockers.", ability: "Remote Operated", freq: "once per game", text: "When Hornet attacks, the target doesn't hit back.", flavor: "“You won't see me coming. You'll hear the drone.”" },
+      { faction: "Sentinels", kind: "char", name: "Faedra", cost: 6, title: "Faedra", meta: "Sentinels · Powered · Champion", atk: 4, steps: [9, 6, 5], mov: 1, pattern: "Default", ability: "Radiance", freq: "passive", textSize: 8.5, text: "Other friendly Runners in her row get +1 ATK.", extra: [{ lead: "Dawn · once per game", text: "Instead of attacking, return a Runner from your discard pile to an empty back-row square. All friendly Runners restore 1 Health. Faedra is stunned until next turn." }], flavor: "“I've watched a hundred worlds burn. Not this one.”" },
+      { faction: "Sentinels", kind: "char", name: "Herald", cost: 2, title: "Callum Reed", meta: "Sentinels · Powered · Courier", atk: 1, steps: [3], mov: 2, pattern: "Default (adjacent enemy ahead)", ability: "Foresight", freq: "when deployed", text: "Recon 3. Put 1 of those cards in your hand. The rest go to the bottom of the deck in any order.", flavor: "“Duck. Trust me.”" },
+      { faction: "Sentinels", kind: "char", name: "Arc", cost: 3, title: "Lance Springs", meta: "Sentinels · Powered · Lancer", atk: 2, steps: [4], mov: 1, pattern: "1 or 2 ahead in his lane", ability: "Resonate", freq: "first Infuse each turn", text: "This turn his attack also hits the enemy on the next square past the target, in the same lane. That Runner doesn't hit back.", flavor: "“Line up. I'll get you both.”" },
+      { faction: "Sentinels", kind: "char", name: "Aria", cost: 5, title: "Tayjah Williams", meta: "Sentinels · Powered · Burst · Legendary", atk: 3, steps: [6], mov: 1, pattern: "Default (adjacent enemy ahead)", ability: "Resonate", freq: "first Infuse", textSize: 9, text: "This turn she can attack any square in the next row ahead: directly in front or diagonally ahead on either side.", extra: [{ lead: "Resonate 2 \u00b7 second Infuse", text: "This turn she hits every enemy in the next row ahead (directly in front and both diagonals). Only the one directly in front hits back. Then she's stunned until the end of your next turn." }], flavor: "“Save the high note for the finale.”" },
+      { faction: "Sentinels", kind: "char", name: "Cadence", cost: 2, title: "Billy Thorpe", meta: "Sentinels · Tech · Evac marshal", atk: 2, steps: [4], mov: 1, pattern: "Default (adjacent enemy ahead)", ability: "Rally", freq: "once per turn", text: "When Cadence moves forward while beside a friendly Runner, that Runner may also move forward 1. Free: it doesn't count toward your 2 moves. Traps still stop it.", flavor: "“On my count. Together.”" },
+      { faction: "Sentinels", kind: "char", name: "Vault", cost: 3, title: "Kennedy Jones", meta: "Sentinels · Powered · Free-runner", atk: 2, steps: [4], mov: 2, pattern: "Default (adjacent enemy ahead)", ability: "Breakthrough", freq: "once per turn", text: "When Vault ends a move in the enemy half (rows 4 to 6), Draw 1.", flavor: "“Who said anything about the street?”" },
+      { faction: "Sentinels", kind: "char", name: "Bastion", cost: 5, title: "Buck Dudley", meta: "Sentinels · Powered · Shield captain", atk: 3, steps: [8, 5], mov: 1, pattern: "Default (adjacent enemy ahead)", ability: "Rally", freq: "passive", text: "Friendly Runners beside Bastion get +2 Lethal on every step that has one. Not himself, and two Bastions still give only +2.", flavor: "“Nobody falls while I'm standing.”" },
+      { faction: "Sentinels", kind: "char", name: "Spyglass", cost: 1, title: "Iris Casey", meta: "Sentinels · Powered · Seer", atk: 1, steps: [3], mov: 2, pattern: "Default (adjacent enemy ahead)", ability: "Lookout", freq: "when deployed", text: "Recon 3. Put any number of those cards on the bottom of the deck. Put the rest back on top in any order.", flavor: "“Rock tells you what already happened. My eye tells me what's next.”" },
+      { faction: "Syndicate", kind: "char", name: "Leviathan", cost: 6, title: "Leviathan", meta: "Syndicate · Tech · Champion", atk: 4, steps: [10, 7, 5], mov: 1, pattern: "Default", ability: "Plating 1", freq: "passive", textSize: 8.5, text: "Attacks on it deal 1 less damage.", extra: [{ lead: "Rift Breach \u00b7 once per game", text: "Instead of attacking, deploy a Runner costing 4 or less from your hand for free onto an empty square in your half, in its lane or a neighboring lane. Counts as your deploy." }, { lead: "Powering Up \u00b7 drawback", text: "Can't attack the turn it's deployed." }], flavor: "“Hold the line. Leviathan is coming.”" },
+      { faction: "Syndicate", kind: "char", name: "Vantage", cost: 2, title: "Beau Hale", meta: "Syndicate · Tech · Spotter", atk: 1, steps: [3], mov: 1, pattern: "Default (adjacent enemy ahead)", ability: "Sync Link", freq: "passive", textSize: 9, text: "Friendly Drones in neighboring lanes (any row) get +1 ATK.", extra: [{ lead: "Spotlight \u00b7 once per turn", text: "Instead of attacking, flip a face-down enemy trap up to 3 rows ahead, in Vantage's lane or a neighboring lane, face up. It still triggers. Once per game, Scramble it: it no longer stops movement or stuns." }], flavor: "“You hit what I see.”" },
+      { faction: "Syndicate", kind: "char", name: "Tripwire", cost: 3, title: "Talia Ramirez", meta: "Syndicate · Tech · Saboteur", atk: 1, steps: [4], mov: 1, pattern: "Default (adjacent enemy ahead)", ability: "Rig", freq: "once per turn", text: "When an enemy Runner activates one of your traps, draw a card.", flavor: "“Every one you step on teaches me something.”" },
+      { faction: "Syndicate", kind: "char", name: "Sleight", cost: 1, title: "Juno Voleur", meta: "Syndicate · Tech · Pickpocket", atk: 2, steps: [3], mov: 2, pattern: "Default (adjacent enemy ahead)", ability: "Lift", freq: "once per turn", text: "Instead of attacking an enemy in range, your opponent discards the top card of their deck. If any enemy Runner is on or next to one of your traps, they reveal their top 2 instead: you discard one, and the other goes back on top.", flavor: "“Thanks for holding that for me.”" },
+      { faction: "Syndicate", kind: "char", name: "Payload", cost: 4, title: "Sal Moretti", meta: "Syndicate · Tech · Demolitionist", atk: 3, steps: [5], mov: 1, pattern: "Default (adjacent enemy ahead)", ability: "Rig", freq: "once per turn", textSize: 9, text: "When an enemy Runner activates one of your traps, that Runner also takes 2 damage (no hit-back).", extra: [{ lead: "Dead Man's Switch \u00b7 when defeated", text: "When Payload is defeated, you may place a Trap from hand face-down on his square for free, even outside your half." }], flavor: "“Watch your step. I already did.”" },
+      { faction: "Syndicate", kind: "char", name: "Breaker", cost: 6, title: "Greta Kurz", meta: "Syndicate · Tech · Siege tank · Legendary", atk: 3, steps: [9, 6], mov: 1, pattern: "Default (adjacent enemy ahead)", ability: "Plating 1", freq: "passive", textSize: 9, text: "Attacks on her deal 1 less damage.", extra: [{ lead: "Siege \u00b7 passive", text: "+1 ATK in the enemy half (rows 4 to 6)." }, { lead: "Steamroll \u00b7 passive", text: "Traps she activates don't stop her movement. Their other effects still apply." }], flavor: "“I'm not going around.”" },
+      { faction: "Syndicate", kind: "char", name: "Hangar", cost: 5, title: "Dmitri Volkov", meta: "Syndicate · Tech · Carrier · Legendary", atk: 3, steps: [6], mov: 1, pattern: "Default (adjacent enemy ahead)", ability: "Launch", freq: "once per turn", text: "Instead of attacking, deploy a Drone costing 2 or less from hand for free onto an empty square next to Hangar (any direction), in your half. Counts as your deploy.", extra: [{ lead: "Trait", text: "Carrier." }], flavor: "“Launch the next wave.”" },
+      { faction: "Syndicate", kind: "char", name: "Drone Pilot", cost: 1, title: "Generic", meta: "Syndicate · Tech · Drone · Generic", atk: 1, steps: [3], mov: 1, pattern: "Exactly 2 rows ahead in its lane. Ignores Blockers.", ability: "Uplink", freq: "passive", text: "+1 ATK while you have a Carrier on the board.", extra: [{ lead: "Trait", text: "Drone." }], flavor: "“Ready for orders!”" },
+      { faction: "Syndicate", kind: "char", name: "Swarm Drone", cost: 1, title: "Generic", meta: "Syndicate · Tech · Drone · Generic", atk: 1, steps: [3], mov: 2, pattern: "Default (adjacent enemy ahead)", ability: "Uplink", freq: "passive", text: "+1 ATK while you have a Carrier on the board.", extra: [{ lead: "Trait", text: "Drone." }], flavor: "“Ready for orders!”" },
+      { faction: "Syndicate", kind: "char", name: "Hammerhead", cost: 5, title: "Rufus Okafor", meta: "Syndicate · Tech · Breacher", atk: 3, steps: [7, 4], mov: 1, pattern: "Default (adjacent enemy ahead)", ability: "Plating 1", freq: "passive", textSize: 9, text: "Attacks on him deal 1 less damage.", extra: [{ lead: "Ram · once per turn", text: "When Hammerhead attacks and the target survives, push it back 1 square in its lane after it hits back. If that square is occupied, it stays put. Being pushed doesn't activate traps." }], flavor: "“Doors are a suggestion.”" },
+      { faction: "Sentinels", kind: "char", name: "Trailblazer", cost: 5, title: "Mateo Reyes", meta: "Sentinels · Tech · Vanguard · Legendary", atk: 3, steps: [6], mov: 2, pattern: "Default (adjacent enemy ahead)", ability: "Breakthrough", freq: "once per turn", text: "When Trailblazer ends a move in the enemy half (rows 4 to 6), Draw 1. Then each other friendly Runner in his lane may move forward 1. Free: it doesn't count toward your 2 moves. Traps still stop it.", flavor: "“Keep up. The path closes behind us.”" },
+      { faction: "Sentinels", kind: "char", name: "Flashpoint", cost: 2, title: "Priya Nair", meta: "Sentinels · Powered · Flash striker", atk: 2, steps: [3], mov: 1, pattern: "Default (adjacent enemy ahead)", ability: "Resonate", freq: "first Infuse", text: "This turn, if her attack doesn't defeat the target, the target is stunned until the end of its owner's next turn (it can't attack or hit back).", flavor: "“Don't look directly at me.”" },
+      { faction: "Syndicate", kind: "char", name: "Mortar", cost: 4, title: "Erik Halvorsen", meta: "Syndicate · Tech · Siege gunner", atk: 3, steps: [6], mov: 1, pattern: "Exactly 2 rows ahead in its lane. Ignores Blockers.", ability: "Entrench", freq: "passive", text: "At the end of your turn, if Mortar didn't move this turn, it becomes Entrenched (mark it with a coin): +1 ATK and Plating 1 (attacks on it deal 1 less damage). Moving or being pushed ends Entrenched.", flavor: "“HA HA! Dig in. Let it rain.”" },
+      { faction: "Sentinels", kind: "char", name: "Spire", cost: 4, title: "Hana Sato", meta: "Sentinels · Powered · Armor-piercer", atk: 3, steps: [5], mov: 1, pattern: "1 or 2 rows ahead in her lane", ability: "Resonate", freq: "first Infuse", text: "This turn her attack ignores Plating, and the target doesn't hit back.", flavor: "“Armor is just a promise. I break promises.”" },
+      { faction: "Syndicate", kind: "char", name: "Hook", cost: 2, title: "Cass Duffy", meta: "Syndicate · Tech · Wrangler", atk: 2, steps: [3], mov: 1, pattern: "Default (adjacent enemy ahead)", ability: "Reel In", freq: "once per turn", text: "Instead of attacking, pull an enemy Runner 2 or 3 squares ahead in Hook's lane 1 square toward Hook. If that square is occupied, it stays put. If it's pulled onto one of your traps, the trap activates.", flavor: "“Come here. I set a place for you.”" },
+      { faction: "Syndicate", kind: "char", name: "Sapper", cost: 5, title: "Yusuf Demir", meta: "Syndicate · Tech · Combat engineer · Legendary", atk: 3, steps: [6], mov: 1, pattern: "Default (adjacent enemy ahead)", ability: "Minefield", freq: "when deployed", text: "Look at the top 5 cards of your deck. Place up to 2 Traps from among them face-down on empty squares in your half, for free. Put the rest on the bottom of the deck in any order.", flavor: "“One wrong step. That's all it takes.”" },
+      { faction: "Sentinels", kind: "char", name: "Riposte", cost: 4, title: "Rosa Delgado", meta: "Sentinels · Powered · Duelist guard", atk: 2, steps: [7, 4], mov: 1, pattern: "Default (adjacent enemy ahead)", ability: "Rally", freq: "once per turn", text: "When an enemy attacks a friendly Runner beside Riposte (same row, neighboring lane), after the attack she deals 2 damage to that enemy. It's an effect: it ignores Plating and can't be hit back.", flavor: "“You swing at them, you answer to me.”" },
+      { faction: "Sentinels", kind: "char", name: "Tailwind", cost: 3, title: "Makani Kūpaʻa", meta: "Sentinels · Powered · Wind guide", atk: 2, steps: [4], mov: 1, pattern: "Default (adjacent enemy ahead)", ability: "Slipstream", freq: "passive", text: "Friendly Runners that start their move beside Tailwind (same row, neighboring lane) get +1 MOV for that move. Tailwind doesn't boost herself.", flavor: "“Go. The wind has you.”" },
+      { faction: "Syndicate", kind: "char", name: "Relay Drone", cost: 1, title: "Generic", meta: "Syndicate · Tech · Drone · Generic", atk: 1, steps: [3], mov: 2, pattern: "Default (adjacent enemy ahead)", ability: "Uplink", freq: "passive", textSize: 9, text: "+1 ATK while you have a Carrier on the board.", extra: [{ lead: "Sync · when deployed", text: "If another friendly Drone is in a neighboring lane, Draw 1." }, { lead: "Trait", text: "Drone." }], flavor: "“Signal up. Swarm, stand by.”" },
+      { faction: "Syndicate", kind: "char", name: "Scrapper", cost: 3, title: "Pip Alvarez", meta: "Syndicate · Tech · Drone mechanic", atk: 2, steps: [4], mov: 1, pattern: "Default (adjacent enemy ahead)", ability: "Salvage", freq: "once per turn", textSize: 9, text: "When a friendly Drone is defeated, Draw 1.", extra: [{ lead: "Trait", text: "Carrier." }], flavor: "“Broke it? Good. Now I've got parts.”" },
+      { faction: "Syndicate", kind: "char", name: "Swarmcaller", cost: 4, title: "Oren Feld", meta: "Syndicate · Tech · Swarm commander", atk: 3, steps: [5], mov: 1, pattern: "Default (adjacent enemy ahead)", ability: "Recall", freq: "when deployed", text: "Recon 4. Put any Drones among those cards in your hand. Put the rest on the bottom of the deck in any order.", flavor: "“All units, form on me.”" },
+      { faction: "Sentinels", kind: "char", name: "Warden", cost: 5, title: "Gus Ferreira", meta: "Sentinels · Powered · Line holder · Legendary", atk: 3, steps: [9, 6], mov: 1, pattern: "Default (adjacent enemy ahead)", ability: "Hold the Line", freq: "passive", text: "Enemy Runners in the lanes on either side of Warden can't move past his row. One that reaches his row stops there and loses any movement it has left. This isn't a trap, so it stops Breaker too.", flavor: "“This line holds.”" },
+      { faction: "Sentinels", kind: "char", name: "Shield Recruit", cost: 1, title: "Generic", meta: "Sentinels · Tech · Recruit · Generic", atk: 1, steps: [3], mov: 1, pattern: "Default (adjacent enemy ahead)", ability: "Brace", freq: "Rally, passive", textSize: 9, text: "While beside another friendly Runner (same row, neighboring lane), Shield Recruit has +2 Lethal on every step that has one.", extra: [{ lead: "Trait", text: "Recruit." }], flavor: "“Shoulder to shoulder. Just like they taught us.”" },
+      { faction: "Sentinels", kind: "char", name: "Stalwart Recruit", cost: 1, title: "Generic", meta: "Sentinels · Tech · Recruit · Generic", atk: 1, steps: [3], mov: 1, pattern: "Default (adjacent enemy ahead)", ability: "Stand Fast", freq: "when an ally would fall", textSize: 9, text: "When a friendly Runner beside Stalwart Recruit (same row, neighboring lane) would be defeated, you may defeat Stalwart Recruit instead. The other Runner takes no damage from that hit or effect.", extra: [{ lead: "Trait", text: "Recruit." }], flavor: "“Not today. Not them.”" },
+      { faction: "Sentinels", kind: "char", name: "Conduit", cost: 1, title: "Jonah Whitfield", meta: "Sentinels · Powered · Channeler", atk: 1, steps: [3], mov: 1, pattern: "Default (adjacent enemy ahead)", ability: "Resonate", freq: "first Infuse", text: "Another friendly Runner in Conduit's row gets +1 ATK this turn.", flavor: "“Take what you need. I've got plenty.”" },
+      { faction: "Syndicate", kind: "char", name: "Spool", cost: 2, title: "Dee Kowalski", meta: "Syndicate · Tech · Trap recycler", atk: 2, steps: [3], mov: 1, pattern: "Default (adjacent enemy ahead)", ability: "Rig", freq: "once per turn", text: "When an enemy Runner activates one of your traps, return that trap to your hand instead of the discard pile. A lasting trap returns when its duration ends.", flavor: "“Waste not.”" },
+      { faction: "Sentinels", kind: "char", name: "Avenger", cost: 4, title: "Ren Takeda", meta: "Sentinels · Powered · Avenger", atk: 3, steps: [5], mov: 1, pattern: "Any square in the next row ahead: directly in front or diagonally ahead on either side", ability: "Vengeance", freq: "once per turn", text: "When a friendly Runner next to Avenger (any direction) is defeated, he gets +2 ATK until the end of your next turn and restores 1 Health.", flavor: "“I carry them with me.”" },
+      { faction: "Sentinels", kind: "char", name: "Ember", cost: 2, title: "Nadia Haddad", meta: "Sentinels · Powered · Field healer", atk: 2, steps: [4], mov: 1, pattern: "Default (adjacent enemy ahead)", ability: "Resonate", freq: "first Infuse", text: "Restore 1 Health to a friendly Runner next to Ember (any direction).", flavor: "“Stay with me. I've got you.”" },
+      { faction: "Sentinels", kind: "char", name: "Geode", cost: 3, title: "Hollis Grant", meta: "Sentinels · Powered · Trap prospector", atk: 2, steps: [4], mov: 1, pattern: "Default (adjacent enemy ahead)", ability: "Breakthrough", freq: "once per turn", text: "When Geode ends a move in the enemy half (rows 4 to 6), look at every face-down enemy trap in his lane.", flavor: "“Ground talks. I listen.”" },
+      { faction: "Sentinels", kind: "char", name: "Raider", cost: 3, title: "Zara Quinn", meta: "Sentinels · Tech · Deep striker", atk: 3, steps: [4], mov: 2, pattern: "Default (adjacent enemy ahead)", ability: "Deep Strike", freq: "passive", text: "While Raider is in the enemy half (rows 4 to 6), targets of her attacks don't hit back.", flavor: "“By the time you turn around, I'm gone.”" },
+      { faction: "Syndicate", kind: "char", name: "Welder", cost: 2, title: "Ines Carvalho", meta: "Syndicate · Tech · Field repair tech", atk: 2, steps: [3], mov: 1, pattern: "Default (adjacent enemy ahead)", ability: "Patch Job", freq: "once per turn", text: "Instead of attacking, restore 1 Health to a friendly Runner that has Plating (any source) next to Welder (any direction).", flavor: "“Sparks mean it's working.”" },
+      { faction: "Syndicate", kind: "char", name: "Ballast", cost: 3, title: "Bram de Vries", meta: "Syndicate · Tech · Line trooper", atk: 2, steps: [5], mov: 1, pattern: "Default (adjacent enemy ahead)", ability: "Plating 1", freq: "passive", textSize: 9, text: "Attacks on him deal 1 less damage.", extra: [{ lead: "Unshakable · passive", text: "Ballast can't be stunned." }], flavor: "“I don't flinch.”" },
+      { faction: "Syndicate", kind: "char", name: "Rampart", cost: 4, title: "Kofi Mensah", meta: "Syndicate · Tech · Shield bearer", atk: 2, steps: [8, 5], mov: 1, pattern: "Default (adjacent enemy ahead)", ability: "Phalanx", freq: "passive", text: "The friendly Runner directly behind Rampart (same lane, one row back) has Plating 1 (attacks on it deal 1 less damage). It stacks with any Plating it already has.", flavor: "“Stay in my shadow.”" },
+      { faction: "Syndicate", kind: "char", name: "Cutter", cost: 3, title: "Dax Mercer", meta: "Syndicate · Tech · Trap hacker", atk: 2, steps: [4], mov: 2, pattern: "Default (adjacent enemy ahead)", ability: "Rewire", freq: "once per turn", text: "Instead of moving, choose a square next to Cutter (any direction). If an enemy trap is there, look at it. It becomes yours and stays face-down (mark it with a coin). When it leaves the board, it goes to its owner's discard pile.", flavor: "“Your trap. My rules.”" },
+      { faction: "Neutral", kind: "char", name: "Pilfer", cost: 2, title: "Kit Calloway", meta: "Neutral · Tech · Gear thief", atk: 2, steps: [4], mov: 1, pattern: "Default (adjacent enemy ahead)", ability: "Strip", freq: "once per turn", text: "Instead of attacking, discard an Upgrade attached to an enemy Runner that Pilfer's attack could reach.", flavor: "“That looked expensive.”" },
+      { faction: "Neutral", kind: "char", name: "Sellsword", cost: 3, title: "Corin Ashby", meta: "Neutral · Tech · Lone mercenary", atk: 2, steps: [5], mov: 1, pattern: "Default (adjacent enemy ahead)", ability: "Lone Wolf", freq: "passive", text: "+1 ATK while no other friendly Runner is in Sellsword's lane.", flavor: "“Pay up front. I work alone.”" },
+      { faction: "Neutral", kind: "char", name: "Bounty Hunter", cost: 4, title: "Vesna Kral", meta: "Neutral · Tech · Bounty hunter", atk: 3, steps: [5], mov: 1, pattern: "Default (adjacent enemy ahead)", ability: "Mark", freq: "when deployed", text: "Choose an enemy Runner and mark it with a coin. While Bounty Hunter is on the board, when that Runner is defeated (by any means), Draw 2 and remove the mark.", flavor: "“Nothing personal. Just paid.”" },
+      { faction: "Neutral", kind: "char", name: "The Wanderer", cost: 5, title: "Unknown", meta: "Neutral · Powered · Rift-walker · Legendary", atk: 3, steps: [7, 4], mov: 1, pattern: "Default (adjacent enemy ahead)", ability: "Rift Walk", freq: "once per turn", textSize: 8.5, text: "Move to any empty square in his row, any lane. Not one of your 2 moves; he can still move. A trap there still goes off.", extra: [{ lead: "Ambush \u00b7 Resonate", text: "If he Rift Walked this turn, his attack can't be hit back, and the target is stunned until the end of its owner's next turn." }], flavor: "“Every road ends somewhere. I've seen most of them.”" }
+    ];
+    const supports = [
+      { faction: "Neutral", kind: "support", name: "Ambush Alarm", cost: 1, title: "Trap", meta: "Neutral · Trap", text: "The triggering Runner takes double damage from all sources.", duration: "One round", howto: trapHow },
+      { faction: "Neutral", kind: "support", name: "Suppression Mine", cost: 1, title: "Trap", meta: "Neutral · Trap", text: "The triggering Runner is stunned: it can't attack or hit back.", duration: "One round", howto: trapHow },
+      { faction: "Neutral", trapFaction: "Neutral", kind: "support", name: "Frag Mine", cost: 2, title: "Trap", meta: "Neutral · Trap", text: "The triggering Runner takes 2 damage.", duration: "Instant", howto: trapHow },
+      { faction: "Neutral", trapFaction: "Neutral", kind: "support", name: "Repulsor Plate", cost: 1, title: "Trap", meta: "Neutral · Trap", text: "Push the triggering Runner back 1 square in its lane, toward its own side. If that square is occupied, it stays put. Being pushed doesn't activate traps.", duration: "Instant", howto: trapHow },
+      { faction: "Neutral", trapFaction: "Neutral", kind: "support", name: "EMP Spike", cost: 1, title: "Trap", meta: "Neutral · Trap", text: "Discard the triggering Runner's upgrade.", duration: "Instant", howto: trapHow },
+      { faction: "Neutral", trapFaction: "Neutral", kind: "support", name: "Drain Spike", cost: 1, title: "Trap", meta: "Neutral · Trap", text: "The triggering Runner's owner gets 1 less Halcyte on their next turn.", duration: "Their next turn", howto: trapHow },
+      { faction: "Neutral", trapFaction: "Neutral", kind: "support", name: "Decoy", cost: 1, title: "Trap", meta: "Neutral · Trap", text: "No effect on the Runner (it still stops). You draw a card.", duration: "Instant", howto: trapHow },
+      { faction: "Neutral", trapFaction: "Neutral", kind: "support", name: "Snare", cost: 1, title: "Trap", meta: "Neutral · Trap", text: "The triggering Runner can't move on its owner's next turn. It can still attack.", duration: "One round", howto: trapHow },
+      { faction: "Neutral", trapFaction: "Neutral", kind: "support", name: "Rift Tear", cost: 3, title: "Trap", meta: "Neutral · Trap", text: "Return the triggering Runner to its owner's hand. Discard its upgrade.", duration: "Instant", howto: trapHow },
+      { faction: "Neutral", trapFaction: "Neutral", kind: "support", name: "Halcyte Leak", cost: 2, title: "Trap", meta: "Neutral · Trap", text: "The triggering Runner and every enemy Runner beside it (same row) can't move on their owner's next turn. They can still attack.", duration: "Their owner's next turn", howto: trapHow },
+      { faction: "Neutral", trapFaction: "Sentinels", kind: "support", name: "Sanctuary Glyph", cost: 1, title: "Trap", meta: "Sentinels · Trap", text: "Your Runners next to this square (any direction) restore 1 Health.", duration: "Instant", howto: trapHow },
+      { faction: "Neutral", trapFaction: "Sentinels", kind: "support", name: "Mirror Ward", cost: 2, title: "Trap", meta: "Sentinels · Trap", text: "The triggering Runner takes damage equal to its current ATK.", duration: "Instant", howto: trapHow },
+      { faction: "Neutral", trapFaction: "Sentinels", kind: "support", name: "Stasis Cage", cost: 2, title: "Trap", meta: "Sentinels · Trap", text: "The triggering Runner can't move, attack or hit back.", duration: "Until the end of its owner's next turn", howto: trapHow },
+      { faction: "Neutral", trapFaction: "Syndicate", kind: "support", name: "Claymore", cost: 2, title: "Trap", meta: "Syndicate · Trap", text: "The triggering Runner takes 3 damage.", duration: "Instant", howto: trapHow },
+      { faction: "Neutral", trapFaction: "Syndicate", kind: "support", name: "Overload Coil", cost: 1, title: "Trap", meta: "Syndicate · Trap", text: "The triggering Runner takes 3 damage if it is Powered, or 1 if it is Tech.", duration: "Instant", howto: trapHow },
+      { faction: "Neutral", trapFaction: "Syndicate", kind: "support", name: "Blast Barricade", cost: 2, title: "Trap", meta: "Syndicate · Trap", text: "Push the triggering Runner back 1 square in its lane. No Runner can enter this square while the barricade stands.", duration: "Until the end of your next turn", howto: "Place face-down in your half. After it activates it stays face-up, then discard it when the duration ends." },
+      { faction: "Neutral", trapFaction: "Neutral", kind: "support", name: "Hero's Sacrifice", cost: 2, title: "Protocol", meta: "Neutral · Protocol", leadText: "Response", text: "When a friendly Runner would be defeated, it stays on the board on its last step instead. Its upgrade stays attached.", duration: "", howto: "Play it the moment its trigger happens, on either player's turn. Then discard it." },
+      { faction: "Neutral", trapFaction: "Sentinels", kind: "support", name: "Shield Wall", cost: 1, title: "Protocol", meta: "Sentinels · Protocol", leadText: "Response", text: "When an enemy attacks a friendly Runner that's beside another friendly Runner: until end of turn, the target and every friendly Runner beside it get +2 Lethal on every step that has one.", duration: "", howto: "Play it the moment its trigger happens, on either player's turn. Then discard it." },
+      { faction: "Neutral", trapFaction: "Sentinels", kind: "support", name: "Breakaway", cost: 2, title: "Protocol", meta: "Sentinels · Protocol", leadText: "Effect", text: "A friendly Runner moves forward 2 squares (free: it doesn't count toward your 2 moves). It can't enter the enemy back row. If it ends in the enemy half, Draw 1.", duration: "", howto: "Pay its cost, resolve it, then discard it." },
+      { faction: "Neutral", trapFaction: "Sentinels", kind: "support", name: "Blinding Flare", cost: 2, title: "Protocol", meta: "Sentinels · Protocol", leadText: "Effect", text: "Choose a row. This turn, enemy Runners in that row can't hit back.", duration: "", howto: "Pay its cost, resolve it, then discard it." },
+      { faction: "Neutral", trapFaction: "Sentinels", kind: "support", name: "Arc Flash", cost: 2, title: "Protocol", meta: "Sentinels · Protocol", leadText: "Effect", text: "Deal 2 damage to an enemy Runner in the same lane as a friendly Runner you Infused this turn.", duration: "", howto: "Pay its cost, resolve it, then discard it." },
+      { faction: "Neutral", trapFaction: "Syndicate", kind: "support", name: "Relay Beacon", cost: 2, title: "Protocol", meta: "Syndicate · Protocol", leadText: "Effect", text: "Choose a friendly Runner. Until the end of your next turn, it has the Carrier trait (your Drones' Uplink is on).", duration: "", howto: "Pay its cost, resolve it, then discard it." },
+      { faction: "Neutral", trapFaction: "Syndicate", kind: "support", name: "Rearm", cost: 2, title: "Protocol", meta: "Syndicate · Protocol", leadText: "Effect", text: "Return up to 2 Traps from your discard pile to your hand.", duration: "", howto: "Pay its cost, resolve it, then discard it." },
+      { faction: "Neutral", trapFaction: "Syndicate", kind: "support", name: "Fortify", cost: 2, title: "Protocol", meta: "Syndicate · Protocol", leadText: "Response", text: "When an enemy attacks a friendly Runner: that Runner gets Plating 2 against that attack (it deals 2 less damage).", duration: "", howto: "Play it the moment its trigger happens, on either player's turn. Then discard it." },
+      { faction: "Neutral", trapFaction: "Syndicate", kind: "support", name: "Rift Step", cost: 2, title: "Protocol", meta: "Syndicate · Protocol", leadText: "Effect", text: "Move a friendly Runner to any empty square in its row. A trap on that square still goes off.", duration: "", howto: "Pay its cost, resolve it, then discard it." },
+      { faction: "Neutral", trapFaction: "Neutral", kind: "support", name: "Remote Detonation", cost: 2, title: "Protocol", meta: "Neutral · Protocol", leadText: "Effect", text: "Choose one of your face-down traps. It activates on an enemy Runner next to it (any direction), as if that Runner had entered its square.", duration: "", howto: "Pay its cost, resolve it, then discard it." },
+      { faction: "Neutral", trapFaction: "Neutral", kind: "support", name: "Field Intel", cost: 1, title: "Protocol", meta: "Neutral · Protocol", leadText: "Effect", text: "Recon 4. Put any number of those cards on the bottom of the deck and the rest back on top in any order. Draw 1.", duration: "", howto: "Pay its cost, resolve it, then discard it." },
+      { faction: "Neutral", trapFaction: "Neutral", kind: "support", name: "Requisition", cost: 2, title: "Protocol", meta: "Neutral · Protocol", leadText: "Effect", text: "Search your deck for a Runner that costs 3 or less, show it, and put it in your hand. Shuffle your deck.", duration: "", howto: "Pay its cost, resolve it, then discard it." },
+      { faction: "Neutral", trapFaction: "Neutral", kind: "support", name: "Patch Up", cost: 1, title: "Protocol", meta: "Neutral · Protocol", leadText: "Effect", text: "Restore 1 Health to a friendly Runner.", duration: "", howto: "Pay its cost, resolve it, then discard it." },
+      { faction: "Neutral", trapFaction: "Neutral", kind: "support", name: "Smoke Screen", cost: 2, title: "Protocol", meta: "Neutral · Protocol", leadText: "Effect", text: "Choose a friendly Runner. It can't be attacked until the start of your next turn.", duration: "", howto: "Pay its cost, resolve it, then discard it." },
+      { faction: "Neutral", kind: "support", name: "Overcharged Rounds", cost: 2, title: "Upgrade", meta: "Neutral · Upgrade", text: "+2 ATK.", duration: "Permanent", howto: upgradeHow },
+      { faction: "Neutral", kind: "support", name: "Hardened Frame", cost: 2, title: "Upgrade", meta: "Neutral · Upgrade", text: "+2 Lethal on every step that has one. No effect on the last step.", duration: "Permanent", howto: upgradeHow },
+      { faction: "Neutral", kind: "support", name: "Rift Striders", cost: 1, title: "Upgrade", meta: "Neutral · Upgrade", text: "+1 MOV.", duration: "Permanent", howto: upgradeHow },
+      { faction: "Neutral", kind: "support", name: "Emergency Stabilizer", cost: 1, title: "Upgrade", meta: "Neutral · Upgrade", text: "The first time this Runner would be defeated, it drops to its last step instead. Then discard this upgrade.", duration: "Until triggered", howto: upgradeHow },
+      { faction: "Neutral", trapFaction: "Neutral", kind: "support", name: "Field Radio", cost: 1, title: "Upgrade", meta: "Neutral · Upgrade", text: "When this Runner is defeated, Draw 2.", duration: "Permanent", howto: upgradeHow },
+      { faction: "Neutral", trapFaction: "Neutral", kind: "support", name: "Medkit", cost: 1, title: "Upgrade", meta: "Neutral · Upgrade", text: "Once per game, during your turn: this Runner restores 1 Health. Then discard this upgrade.", duration: "Until used", howto: upgradeHow },
+      { faction: "Neutral", trapFaction: "Neutral", kind: "support", name: "Recon Visor", cost: 1, title: "Upgrade", meta: "Neutral · Upgrade", text: "When this Runner ends a move, you may look at one face-down enemy trap up to 2 squares ahead in its lane.", duration: "Permanent", howto: upgradeHow },
+      { faction: "Neutral", trapFaction: "Neutral", kind: "support", name: "Halcyte Capacitor", cost: 2, title: "Upgrade", meta: "Neutral · Upgrade", text: "This Runner can be Infused up to 3 times per turn.", duration: "Permanent", howto: upgradeHow },
+      { faction: "Neutral", trapFaction: "Sentinels", kind: "support", name: "Ward Banner", cost: 2, title: "Upgrade", meta: "Sentinels · Upgrade", text: "At the start of your turn, restore 1 Health to one friendly Runner beside this Runner.", duration: "Permanent", howto: upgradeHow },
+      { faction: "Neutral", trapFaction: "Sentinels", kind: "support", name: "Courier Pack", cost: 1, title: "Upgrade", meta: "Sentinels · Upgrade", text: "+1 MOV. When this Runner ends a move in the enemy half, Draw 1 (once per turn).", duration: "Permanent", howto: upgradeHow },
+      { faction: "Neutral", trapFaction: "Sentinels", kind: "support", name: "Prism Focus", cost: 2, title: "Upgrade", meta: "Sentinels · Upgrade", text: "The first time you Infuse this Runner each turn, it gets +2 ATK instead of +1.", duration: "Permanent", howto: upgradeHow },
+      { faction: "Neutral", trapFaction: "Syndicate", kind: "support", name: "Uplink Module", cost: 1, title: "Upgrade", meta: "Syndicate · Upgrade", text: "This Runner has the Carrier trait.", duration: "Permanent", howto: upgradeHow },
+      { faction: "Neutral", trapFaction: "Syndicate", kind: "support", name: "Charge Bandolier", cost: 1, title: "Upgrade", meta: "Syndicate · Upgrade", textSize: 9.5, text: "Once per turn, instead of attacking, place a Trap from your hand face-down on an empty square next to this Runner (any direction), in your half.", duration: "Permanent", howto: upgradeHow },
+      { faction: "Neutral", trapFaction: "Syndicate", kind: "support", name: "Heavy Plating", cost: 3, title: "Upgrade", meta: "Syndicate · Upgrade", text: "Plating 1 (attacks on this Runner deal 1 less damage). It can't be pushed.", duration: "Permanent", howto: upgradeHow }
+    ];
+    const art = {
+      Aegis: ["/_blob/e690f5fccdb8f875dc8c9fe2bbe03c9e", 40],
+      Waypoint: ["/_blob/c8d3a488b3f4066946c5453bdf570eeb", 40],
+      Tinder: ["/_blob/560eeb45a6f31c1e7a99bc3a563bb527", 40],
+      Zenith: ["/_blob/2643ff3b40bbc420f33bf3b777eebca8", 40],
+      Lumen: ["/_blob/29c7f9392e2bb5f0825eaa1378f9f6b9", 40],
+      Blink: ["/_blob/fe4ccabd25075a3d5d0b8c0904affaad", 40],
+      Anvil: ["/_blob/165c3dfda3856d1880ef747ed5bdea57", 40],
+      Lockstep: ["/_blob/9af8c648c4599adb81ed01f5b1671289", 40],
+      Gremlin: ["/_blob/6cc2cc6899ba5e6634f414f2283fac6a", 40],
+      Hornet: ["/_blob/a0f0bc0b4ef7010edb0cd6cc4d51c34e", 45],
+      Faedra: ["/_blob/2721000c210a13b7289499ab20a16ec1", 40],
+      Leviathan: ["/_blob/5a7549bae42bab364c29658ffde1d903", 40],
+      Breaker: ["/_blob/2660954f108bde3e85449daa8e5523a1", 40, true],
+      Payload: ["/_blob/cd69d5316fe747875fbf74d88deb88af", 40],
+      Hangar: ["/_blob/d4ed4f3cc809991d64ca0c93fb5f62ad", 40],
+      Spyglass: ["/_blob/c7db83ac8b81397dee9c97f582bf0ae9", 40],
+      Aria: ["/_blob/a74f42ebdbeb82e633faa12d8f195f5a", 40],
+      Vantage: ["/_blob/edc9907ef65dafd6fbeea242b5bd7109", 40],
+      Herald: ["/_blob/eae5e563cc672bfabd8a4dae02a872e8", 40],
+      Tripwire: ["/_blob/df492599bbff7d51636d86aac4d64d36", 40],
+      Sleight: ["/_blob/44c1432bc73cd798826ed1fd3ed3d180", 40],
+      Arc: ["/_blob/b94de7422cd27bf396e29d29e9f74a33", 40],
+      Cadence: ["/_blob/caaf2fe78f16c72d381c8a83267c9b8b", 40],
+      Vault: ["/_blob/94f07483d82e7add44b687e55ee338e0", 40],
+      Bastion: ["/_blob/52ff2764cdd26c2dd6b21f48508e4348", 40],
+      "Swarm Drone": ["/_blob/b0fa9bab3941dc2b42092f658095d673", 40],
+      "Drone Pilot": ["/_blob/d9b4cf1dc0a630d9efa99efe62304759", 40],
+      Flashpoint: ["/_blob/8e2c45975c35ca9c6cb1e372af87a085", 40],
+      Spire: ["/_blob/c1f29635e7e3c58e1aab00bc16d4f714", 40],
+      Conduit: ["/_blob/365e9380ae21d441f1995b083c28d9aa", 40],
+      Ember: ["/_blob/3f659b332dbb34ea65f327fabb4959ac", 40],
+      Riposte: ["/_blob/c179cb3d85dd58dca03c780571b467ee", 40],
+      Warden: ["/_blob/00398d808d8f0fe4e7df7df974b97f67", 40],
+      "Shield Recruit": ["/_blob/5a4004ad60dbec072e102acadcd45c7d", 40],
+      "Stalwart Recruit": ["/_blob/264739d0bb00c5974731e84b877a8200", 40],
+      Trailblazer: ["/_blob/af446db6980c69043272e6058d84d084", 40],
+      Tailwind: ["/_blob/ef9acace4fa5f2a9f86cc0447a696d13", 40],
+      Geode: ["/_blob/11240ded40f6ec39f224e03b967efc03", 40],
+      Raider: ["/_blob/8a695cf0c0662288843814f8010772dd", 40],
+      Avenger: ["/_blob/3e6ab5f3d5d9edfe2bbba5908a3660fb", 40],
+      "Relay Drone": ["/_blob/041b269f7fba4ce8936b291efcf10c7d", 40],
+      Scrapper: ["/_blob/f80d6d640a0d8072007a5830f13147a7", 40],
+      Swarmcaller: ["/_blob/66e95471e17b81ebed565e93c055be36", 40],
+      Hook: ["/_blob/4b88bba8f43fd6f1b03521ff413258ed", 40],
+      Sapper: ["/_blob/2d91d659f0577ca60e4d550849778af9", 40],
+      Spool: ["/_blob/1cd3c925f2ac5d4813f06cd71fce6717", 40],
+      Cutter: ["/_blob/c7b25e3c4a663017edfc5a9f838cc2f8", 40],
+      Hammerhead: ["/_blob/d2ccc4ddd03a0851d92eb449da5152ad", 40],
+      Mortar: ["/_blob/cdd0f1e52273f498772e49b28cf4ad57", 40],
+      Welder: ["/_blob/704b822a360a5e2e2c2336a070ab4faa", 40],
+      Ballast: ["/_blob/7b606cf4c425887feadd71cbcf0286c1", 30],
+      Rampart: ["/_blob/f06502da96e87dcddd2961253cd4fe5c", 40],
+      Pilfer: ["/_blob/4c4961f66b74730c164daaea3cb0d0cf", 40],
+      Sellsword: ["/_blob/0a3f70abfca1fa48325f1692ee01071b", 40],
+      "Bounty Hunter": ["/_blob/e4932ff1d8c0af5238f27c09673d1ce8", 40],
+      "The Wanderer": ["/_blob/5c5917e736076a5a3a19eef2d3a3950c", 40],
+      "Ambush Alarm": ["/_blob/5a8e0a01ce8e54198b6ed6f16d2bf6a3", 50],
+      "Suppression Mine": ["/_blob/ea227149784b2a10ba268dcf051a570c", 50],
+      "Frag Mine": ["/_blob/eb8a74eab5c3f55f06ece5400d143152", 50],
+      "Repulsor Plate": ["/_blob/50e3243aee930b769ff50709e6455620", 50],
+      "EMP Spike": ["/_blob/5e2fed6849c0e6ec1a855661a48d0af6", 50],
+      "Drain Spike": ["/_blob/a74820cd82ee3ff6dd73b5c82e7258fb", 50],
+      Decoy: ["/_blob/aa984e1ca52a29fcc7659856ec7a66d6", 50],
+      Snare: ["/_blob/a5c8ebadbec313fb70f801e5bfa451fa", 50],
+      "Rift Tear": ["/_blob/9942a5e4b8901f32dec26bd304d63f26", 50],
+      "Halcyte Leak": ["/_blob/f681b88c67807484013a31da35799763", 50],
+      "Sanctuary Glyph": ["/_blob/fcfcbce6860718bbf7832b5fd3cdb152", 50],
+      "Mirror Ward": ["/_blob/66918ca8561169c87b875bc7c26d4591", 50],
+      "Stasis Cage": ["/_blob/b072978c6d4531856ce58a6c5054cf9b", 40],
+      Claymore: ["/_blob/4a509443dfa2592169dd4901cff07f9d", 50],
+      "Overload Coil": ["/_blob/ed575a960699dd5d795e0d92cf918080", 50],
+      "Blast Barricade": ["/_blob/b2ac160cbb4769297a999084af8d20a9", 50],
+      "Field Radio": ["/_blob/307c61d87d22965021761c1791394783", 50],
+      Medkit: ["/_blob/494e6df98aa7bed82c6f8389231df634", 50],
+      "Recon Visor": ["/_blob/313b94520d6bca02b79575c1220d553b", 50],
+      "Halcyte Capacitor": ["/_blob/32fe9b9eca3b3f9f992f266441016cb3", 50],
+      "Ward Banner": ["/_blob/a49d066d2a9862c908c5a2860b496c32", 50],
+      "Courier Pack": ["/_blob/aa8d948eebae59a82fe3a88dbc10ec59", 50],
+      "Prism Focus": ["/_blob/0368615dc6900183f49c1608cb147f70", 50],
+      "Uplink Module": ["/_blob/179b7f9cda87b36e9c4bc4b51a7bb5e6", 50],
+      "Charge Bandolier": ["/_blob/fe93f34db11954b41c77e5c72136bc9d", 50],
+      "Heavy Plating": ["/_blob/83716d3e3ebf0884a556dfb4feb06579", 50],
+      "Hero's Sacrifice": ["/_blob/314b8c3b2053e0d25faf799dcdeabd6b", 50],
+      "Shield Wall": ["/_blob/8ed4dbeae0df1c7c9150861300b3317e", 50],
+      Breakaway: ["/_blob/d7ab1401b56f4535d07a88dc592a353d", 50],
+      "Blinding Flare": ["/_blob/a0b642cc8542b098354170afbb8bfc8e", 50],
+      "Arc Flash": ["/_blob/a7a485393ad68be21a82908bcdc09180", 50],
+      "Relay Beacon": ["/_blob/1eac3f93a6603b18204ab7ec9dfa39e8", 50],
+      Rearm: ["/_blob/cace7b18207582915f160d931c74e906", 50],
+      Fortify: ["/_blob/daf0e13222c80239ff74a10de22d5448", 50],
+      "Rift Step": ["/_blob/5653e6d51096736781b0b5356dd20231", 50],
+      "Remote Detonation": ["/_blob/a7f5e7352dce0c6bbff5c9cf38c23012", 50],
+      "Field Intel": ["/_blob/f0566c269d9ca8ccaab12add34863734", 50],
+      Requisition: ["/_blob/6778a631322f39ae1f5aa4e937a7febf", 50],
+      "Patch Up": ["/_blob/04b6cf40be9af0c39ff30a7dcd6073d3", 50],
+      "Smoke Screen": ["/_blob/fa13a6fd9d59a9c83d11c2cc92dc629c", 50],
+      "Overcharged Rounds": ["/_blob/8e3005e7e491c61c70142cfeb3098cb8", 50],
+      "Hardened Frame": ["/_blob/f1e7055d2ea7b590bb50bd98db36e456", 50],
+      "Rift Striders": ["/_blob/06017bcc99ecb869e230be49d27d387f", 50],
+      "Emergency Stabilizer": ["/_blob/c23c23b88322d7f2d5318450e8aff3e8", 50]
+    };
+    const pick = ({ "Reinforced Plating": "Hardened Frame" })[this.props.cardName] ?? this.props.cardName ?? "Aegis";
+    const w = Number(this.props.cardW ?? 226);
+    const h = Number(this.props.cardH ?? 322);
+    const isHalcyte = pick === "Halcyte";
+    const all = runners.concat(supports);
+    const raw = all.find((x) => x.name === pick) || all[0];
+    const isTrap = raw.kind === "support" && raw.title === "Trap";
+    const isUpgrade = raw.kind === "support" && raw.title === "Upgrade";
+    const pal = {
+      Sentinels: { frame: "#f3e6c4", band: "#e8a93a", bandInk: "#2a1d08", key: "#a8650c", textBg: "#fffaf0", accent: "#ffd36b" },
+      Syndicate: { frame: "#4a5263", band: "#f07a1a", bandInk: "#1d1410", key: "#c4560a", textBg: "#f2f4f7", accent: "#7fe3ff" },
+      Trap: { frame: "#2b2b30", band: "#3a3a40", bandInk: "#ffffff", key: "#d4600f", textBg: "#fbf3ea", accent: "#ff9b3d" },
+      Upgrade: { frame: "#3c5a7a", band: "#9fd3f5", bandInk: "#10263b", key: "#2a6aa3", textBg: "#f2f7fc", accent: "#bee3f8" },
+      Neutral: { frame: "#5a5148", band: "#c9b79c", bandInk: "#231c14", key: "#7a5c3a", textBg: "#faf7f2", accent: "#e8d9bf" },
+      Protocol: { frame: "#4b3a63", band: "#cdb4ef", bandInk: "#1f1030", key: "#6b3fa0", textBg: "#f8f4fd", accent: "#e3cbff" }
+    };
+    const isChar = raw.kind === "char";
+    const p = pal[isChar ? raw.faction : isTrap ? "Trap" : raw.title === "Protocol" ? "Protocol" : "Upgrade"];
+    const W = 242;
+    const H = 342;
+    const hasCrit = isChar && raw.steps.length >= 2;
+    const hasLast = isChar && raw.steps.length >= 3;
+    const bottomH = hasCrit ? 20 : 0;
+    const leftH = H - 20 - bottomH;
+    const box = isChar
+      ? { l: 26, t: 26, w: W - 26 - (hasLast ? 26 : 6), h: H - 26 - (hasCrit ? 26 : 6) }
+      : { l: 6, t: 6, w: W - 12, h: H - 12 };
+    const fullPos = { Faedra: "50% 50%", Leviathan: "50% 50%" };
+    const c = {
+      ...raw,
+      ...p,
+      art: art[raw.name] ? art[raw.name][0] : "",
+      focus: art[raw.name] ? art[raw.name][1] : 50,
+      flipX: art[raw.name] && art[raw.name][2] ? -1 : 1,
+      hasArt: !!art[raw.name],
+      noArt: !art[raw.name],
+      typeLine: isChar ? raw.meta : raw.title + " · " + (raw.trapFaction || "Neutral"),
+      lead: isChar ? raw.ability + " · " + raw.freq : raw.leadText ? raw.leadText : isTrap ? "When triggered" : "Effect",
+      showLasts: raw.kind === "support" && !!raw.duration,
+      foot: isChar ? raw.flavor : raw.howto,
+      footStyle: isChar ? "italic" : "normal",
+      isTrap,
+      isUpgrade,
+      isChar,
+      isSupport: raw.kind === "support",
+      nameSize: raw.name.length >= 17 ? 16 : 19,
+      costTitle: "Costs " + raw.cost + " Halcyte to play",
+      def1: isChar ? raw.steps[0] : "",
+      def2: hasCrit ? raw.steps[1] : "",
+      def3: hasLast ? raw.steps[2] : "",
+      hasLast,
+      critHasDef: hasLast,
+      critIsLast: hasCrit && !hasLast,
+      textSize: raw.textSize ? 9.5 : 10,
+      showPattern: isChar && !/^Default/.test(raw.pattern),
+      footWrap: isChar ? "nowrap" : "normal",
+      extra: isChar ? (raw.extra || []) : [],
+      stepCount: isChar ? raw.steps.length + 1 : "",
+      hasCrit,
+      woundedHasDef: hasCrit,
+      woundedIsLast: isChar && !hasCrit,
+      h1: isChar ? Array.from({ length: raw.steps.length + 1 }, (_, i) => ({ i })) : [],
+      h2: isChar ? Array.from({ length: raw.steps.length }, (_, i) => ({ i })) : [],
+      h3: isChar ? Array.from({ length: Math.max(1, raw.steps.length - 1) }, (_, i) => ({ i })) : []
+    };
+    // Champions are full-art: the painting fills the card behind the bands and rules text.
+    c.fullArt = isChar && /Champion/.test(raw.meta) && c.hasArt;
+    c.panelArt = c.hasArt && !c.fullArt;
+    c.fullPos = (fullPos[raw.name] || "50% 50%");
+    // Zoomed out: the square painting spans the card width just under the top band; a blurred copy fills the rest.
+    c.fullTop = 22;
+    c.artBorder = c.fullArt ? "transparent" : "#15121c";
+    c.artBg = c.fullArt ? "transparent" : "#2a2833";
+    c.textInk = c.fullArt ? "#f4f1ea" : "#15121c";
+    c.subInk = c.fullArt ? "#d9d4cb" : "#3d3846";
+    c.footInk = c.fullArt ? "#bdb6ab" : "#555";
+    if (c.fullArt) { c.textBg = "rgba(21, 18, 28, 0.84)"; c.key = c.accent; }
+    // Full-art plates and stat bands are semi-transparent so the painting shows through.
+    const fa = c.fullArt;
+    const rgba = (hex, a) => "rgba(" + [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16)).join(", ") + ", " + a + ")";
+    c.bgFull = fa ? rgba("#4fae5c", 0.78) : "#4fae5c";
+    c.bgWound = fa ? rgba("#f2c12e", 0.78) : "#f2c12e";
+    c.bgCrit = fa ? rgba("#d9442b", 0.8) : "#d9442b";
+    c.bgLast = fa ? rgba("#15121c", 0.78) : "#15121c";
+    c.chipBg = fa ? rgba("#ffffff", 0.8) : "#ffffff";
+    c.typeBg = fa ? rgba("#15121c", 0.78) : "#15121c";
+    if (fa) c.band = rgba(c.band, 0.8);
+    return { fit: c.fullArt ? { art: "1 1 0", ar: "auto", text: "0 0 auto" } : !isHalcyte ? { art: "0 1 auto", ar: "1.5", text: "1 0 auto" } : { art: "1 1 0", ar: "auto", text: "0 0 auto" }, c, box, leftH, w, h, sx: w / 250, sy: h / 350, isHalcyte, notHalcyte: !isHalcyte };
+  }
+}
+</script>
+</body>
+</html>

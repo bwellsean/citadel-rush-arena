@@ -1,0 +1,624 @@
+{
+ "name": "Citadel Rush",
+ "menuBackgroundImage": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/banner.webp?v=1",
+ "cardRotation": 90,
+ "customHelp": "CITADEL RUSH quick reference\nBoard: 5 lanes (A-E) x 6 rows. Row 1 and 2 and 3 are Player 1's half, rows 4 to 6 are Player 2's half. Each Citadel sits beyond its owner's back row. Bring the enemy Citadel (your counter) from 15 to 0 to win.\nHalcyte: you start with 6 in your supply. Turn 1 you have 1 (second player: 2), then 1 more each turn, max 6. At the start of your turn drag 1 from the supply to Available. Tap a Halcyte to spend it; they untap each turn.\nTurn: Draw 1. Main phase: deploy up to 1 Runner on an empty square of your back row, play any Traps, Upgrades and Protocols you can pay for, Infuse (1 Halcyte: +1 ATK this turn, max 2 per Runner), Citadel Strike (2 Halcyte: 3 damage to an enemy Runner in your back row, once per turn), and make up to 2 moves with different Runners (first move is required if possible). Free sidestep if a Runner is directly ahead. Attack phase: each Runner may attack once.\nTraps: play face down on an empty square in your half. Upgrades: drop onto your Runner (max 1).\nRunner Health: a hit of 2+ below the current Lethal drops 1 step; a hit at or above Lethal defeats it; 0 or 1 glances. Mark steps with the Wounded, Critical and Last Stand tokens (drag from the token bar onto the card). Only survivors hit back.\nDeck: 40 cards, 1 faction, at least 12 Runners, up to 3 copies, 1 Champion, at most 2 Legendary cards. The deck builder checks size and copies; check Champions, Legendaries and the 12-Runner minimum yourself.\nFull rules: https://claude.ai/artifact/SdixphB2RvUK1PvQtYAVz9",
+ "defaultRessources": {
+  "backgrounds": [
+   "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/playmat.webp?v=1"
+  ],
+  "decksUrl": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/decks.json?v=1"
+ },
+ "deckBuilding": {
+  "mainFilters": [
+   "type",
+   "faction",
+   "cost",
+   "rarity"
+  ],
+  "costCurveIgnoredTypes": [],
+  "formats": [
+   {
+    "title": "Standard",
+    "gameplay": "Standard",
+    "deckRuleset": "Standard"
+   }
+  ],
+  "deckRulesets": {
+   "Standard": {
+    "general": {
+     "min": 40,
+     "max": 40,
+     "maxPerCard": 3
+    }
+   }
+  }
+ },
+ "deckRulesets": {
+  "Standard": {
+   "general": {
+    "min": 40,
+    "max": 40,
+    "maxPerCard": 3
+   }
+  }
+ },
+ "gameplay": {
+  "Standard": {
+   "mulligan": {
+    "startingHandSize": 5,
+    "mulliganCount": {
+     "min": 0,
+     "max": 10
+    },
+    "mulliganCycle": {
+     "info": "Redraw rule: only if your hand has no Runner. Select your whole hand to shuffle it back and draw 5 new cards.",
+     "steps": [
+      "toBottom",
+      "shuffle",
+      "draw"
+     ],
+     "selectionRange": {
+      "min": 5,
+      "max": 5
+     }
+    }
+   },
+   "newTurn": {
+    "drawOnStart": true,
+    "drawPerTurn": 1,
+    "sharedTurn": false,
+    "firstPlayerTokenName": "First player"
+   },
+   "countersStartingValues": [
+    15
+   ],
+   "defaultNotes": "Citadel Health starts at 15 (counter).\nHalcyte this turn: \nOnce-per-game abilities used: ",
+   "cardRotation": 90,
+   "tokens": [
+    {
+     "name": "First player",
+     "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/tokens/first-player.png?v=1",
+     "isUnique": true
+    },
+    {
+     "name": "Citadel Strike used",
+     "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/tokens/citadel-strike.png?v=1",
+     "leavesAtEndOfTurn": true
+    }
+   ],
+   "draggableTokens": [
+    {
+     "id": "wounded",
+     "name": "Wounded",
+     "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/tokens/wounded.png?v=1"
+    },
+    {
+     "id": "critical",
+     "name": "Critical",
+     "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/tokens/critical.png?v=1"
+    },
+    {
+     "id": "last-stand",
+     "name": "Last Stand",
+     "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/tokens/last-stand.png?v=1"
+    },
+    {
+     "id": "stunned",
+     "name": "Stunned",
+     "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/tokens/stunned.png?v=1"
+    },
+    {
+     "id": "double-damage",
+     "name": "Double Damage",
+     "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/tokens/double-damage.png?v=1"
+    },
+    {
+     "id": "infused",
+     "name": "Infused +1 ATK",
+     "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/tokens/infused.png?v=1"
+    },
+    {
+     "id": "snared",
+     "name": "Snared (no move)",
+     "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/tokens/snared.png?v=1"
+    },
+    {
+     "id": "used",
+     "name": "Once per game: used",
+     "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/tokens/used.png?v=1"
+    },
+    {
+     "id": "marked",
+     "name": "Marked",
+     "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/tokens/marked.png?v=1"
+    }
+   ],
+   "beforeGameStart": {
+    "initialBoardSetup": [
+     {
+      "createCardId": "halcyte",
+      "count": 6,
+      "destination": "Mana"
+     }
+    ]
+   },
+   "sections": {
+    "layout": {
+     "direction": "row",
+     "content": [
+      {
+       "section": "Halcyte",
+       "style": {
+        "width": "60%"
+       }
+      },
+      {
+       "section": "Mana",
+       "style": {
+        "width": "40%"
+       }
+      }
+     ]
+    },
+    "sharedZone": {
+     "height": 63,
+     "layout": {
+      "direction": "column",
+      "reverseForOppositeSide": true,
+      "content": [
+       {
+        "direction": "row",
+        "reverseForOppositeSide": true,
+        "content": [
+         {
+          "section": "A6",
+          "style": {
+           "width": "20%"
+          }
+         },
+         {
+          "section": "B6",
+          "style": {
+           "width": "20%"
+          }
+         },
+         {
+          "section": "C6",
+          "style": {
+           "width": "20%"
+          }
+         },
+         {
+          "section": "D6",
+          "style": {
+           "width": "20%"
+          }
+         },
+         {
+          "section": "E6",
+          "style": {
+           "width": "20%"
+          }
+         }
+        ]
+       },
+       {
+        "direction": "row",
+        "reverseForOppositeSide": true,
+        "content": [
+         {
+          "section": "A5",
+          "style": {
+           "width": "20%"
+          }
+         },
+         {
+          "section": "B5",
+          "style": {
+           "width": "20%"
+          }
+         },
+         {
+          "section": "C5",
+          "style": {
+           "width": "20%"
+          }
+         },
+         {
+          "section": "D5",
+          "style": {
+           "width": "20%"
+          }
+         },
+         {
+          "section": "E5",
+          "style": {
+           "width": "20%"
+          }
+         }
+        ]
+       },
+       {
+        "direction": "row",
+        "reverseForOppositeSide": true,
+        "content": [
+         {
+          "section": "A4",
+          "style": {
+           "width": "20%"
+          }
+         },
+         {
+          "section": "B4",
+          "style": {
+           "width": "20%"
+          }
+         },
+         {
+          "section": "C4",
+          "style": {
+           "width": "20%"
+          }
+         },
+         {
+          "section": "D4",
+          "style": {
+           "width": "20%"
+          }
+         },
+         {
+          "section": "E4",
+          "style": {
+           "width": "20%"
+          }
+         }
+        ]
+       },
+       {
+        "direction": "row",
+        "reverseForOppositeSide": true,
+        "content": [
+         {
+          "section": "A3",
+          "style": {
+           "width": "20%"
+          }
+         },
+         {
+          "section": "B3",
+          "style": {
+           "width": "20%"
+          }
+         },
+         {
+          "section": "C3",
+          "style": {
+           "width": "20%"
+          }
+         },
+         {
+          "section": "D3",
+          "style": {
+           "width": "20%"
+          }
+         },
+         {
+          "section": "E3",
+          "style": {
+           "width": "20%"
+          }
+         }
+        ]
+       },
+       {
+        "direction": "row",
+        "reverseForOppositeSide": true,
+        "content": [
+         {
+          "section": "A2",
+          "style": {
+           "width": "20%"
+          }
+         },
+         {
+          "section": "B2",
+          "style": {
+           "width": "20%"
+          }
+         },
+         {
+          "section": "C2",
+          "style": {
+           "width": "20%"
+          }
+         },
+         {
+          "section": "D2",
+          "style": {
+           "width": "20%"
+          }
+         },
+         {
+          "section": "E2",
+          "style": {
+           "width": "20%"
+          }
+         }
+        ]
+       },
+       {
+        "direction": "row",
+        "reverseForOppositeSide": true,
+        "content": [
+         {
+          "section": "A1",
+          "style": {
+           "width": "20%"
+          }
+         },
+         {
+          "section": "B1",
+          "style": {
+           "width": "20%"
+          }
+         },
+         {
+          "section": "C1",
+          "style": {
+           "width": "20%"
+          }
+         },
+         {
+          "section": "D1",
+          "style": {
+           "width": "20%"
+          }
+         },
+         {
+          "section": "E1",
+          "style": {
+           "width": "20%"
+          }
+         }
+        ]
+       }
+      ]
+     }
+    },
+    "sectionsDict": {
+     "A1": {
+      "isHidden": "no",
+      "height": 9.5,
+      "alignment": "CENTER",
+      "displayedTitle": "A1",
+      "noQuickActions": true
+     },
+     "B1": {
+      "isHidden": "no",
+      "height": 9.5,
+      "alignment": "CENTER",
+      "displayedTitle": "B1",
+      "noQuickActions": true
+     },
+     "C1": {
+      "isHidden": "no",
+      "height": 9.5,
+      "alignment": "CENTER",
+      "displayedTitle": "C1",
+      "noQuickActions": true
+     },
+     "D1": {
+      "isHidden": "no",
+      "height": 9.5,
+      "alignment": "CENTER",
+      "displayedTitle": "D1",
+      "noQuickActions": true
+     },
+     "E1": {
+      "isHidden": "no",
+      "height": 9.5,
+      "alignment": "CENTER",
+      "displayedTitle": "E1",
+      "noQuickActions": true
+     },
+     "A2": {
+      "isHidden": "no",
+      "height": 9.5,
+      "alignment": "CENTER",
+      "displayedTitle": "A2",
+      "noQuickActions": true
+     },
+     "B2": {
+      "isHidden": "no",
+      "height": 9.5,
+      "alignment": "CENTER",
+      "displayedTitle": "B2",
+      "noQuickActions": true
+     },
+     "C2": {
+      "isHidden": "no",
+      "height": 9.5,
+      "alignment": "CENTER",
+      "displayedTitle": "C2",
+      "noQuickActions": true
+     },
+     "D2": {
+      "isHidden": "no",
+      "height": 9.5,
+      "alignment": "CENTER",
+      "displayedTitle": "D2",
+      "noQuickActions": true
+     },
+     "E2": {
+      "isHidden": "no",
+      "height": 9.5,
+      "alignment": "CENTER",
+      "displayedTitle": "E2",
+      "noQuickActions": true
+     },
+     "A3": {
+      "isHidden": "no",
+      "height": 9.5,
+      "alignment": "CENTER",
+      "displayedTitle": "A3",
+      "noQuickActions": true
+     },
+     "B3": {
+      "isHidden": "no",
+      "height": 9.5,
+      "alignment": "CENTER",
+      "displayedTitle": "B3",
+      "noQuickActions": true
+     },
+     "C3": {
+      "isHidden": "no",
+      "height": 9.5,
+      "alignment": "CENTER",
+      "displayedTitle": "C3",
+      "noQuickActions": true
+     },
+     "D3": {
+      "isHidden": "no",
+      "height": 9.5,
+      "alignment": "CENTER",
+      "displayedTitle": "D3",
+      "noQuickActions": true
+     },
+     "E3": {
+      "isHidden": "no",
+      "height": 9.5,
+      "alignment": "CENTER",
+      "displayedTitle": "E3",
+      "noQuickActions": true
+     },
+     "A4": {
+      "isHidden": "no",
+      "height": 9.5,
+      "alignment": "CENTER",
+      "displayedTitle": "A4",
+      "noQuickActions": true
+     },
+     "B4": {
+      "isHidden": "no",
+      "height": 9.5,
+      "alignment": "CENTER",
+      "displayedTitle": "B4",
+      "noQuickActions": true
+     },
+     "C4": {
+      "isHidden": "no",
+      "height": 9.5,
+      "alignment": "CENTER",
+      "displayedTitle": "C4",
+      "noQuickActions": true
+     },
+     "D4": {
+      "isHidden": "no",
+      "height": 9.5,
+      "alignment": "CENTER",
+      "displayedTitle": "D4",
+      "noQuickActions": true
+     },
+     "E4": {
+      "isHidden": "no",
+      "height": 9.5,
+      "alignment": "CENTER",
+      "displayedTitle": "E4",
+      "noQuickActions": true
+     },
+     "A5": {
+      "isHidden": "no",
+      "height": 9.5,
+      "alignment": "CENTER",
+      "displayedTitle": "A5",
+      "noQuickActions": true
+     },
+     "B5": {
+      "isHidden": "no",
+      "height": 9.5,
+      "alignment": "CENTER",
+      "displayedTitle": "B5",
+      "noQuickActions": true
+     },
+     "C5": {
+      "isHidden": "no",
+      "height": 9.5,
+      "alignment": "CENTER",
+      "displayedTitle": "C5",
+      "noQuickActions": true
+     },
+     "D5": {
+      "isHidden": "no",
+      "height": 9.5,
+      "alignment": "CENTER",
+      "displayedTitle": "D5",
+      "noQuickActions": true
+     },
+     "E5": {
+      "isHidden": "no",
+      "height": 9.5,
+      "alignment": "CENTER",
+      "displayedTitle": "E5",
+      "noQuickActions": true
+     },
+     "A6": {
+      "isHidden": "no",
+      "height": 9.5,
+      "alignment": "CENTER",
+      "displayedTitle": "A6",
+      "noQuickActions": true
+     },
+     "B6": {
+      "isHidden": "no",
+      "height": 9.5,
+      "alignment": "CENTER",
+      "displayedTitle": "B6",
+      "noQuickActions": true
+     },
+     "C6": {
+      "isHidden": "no",
+      "height": 9.5,
+      "alignment": "CENTER",
+      "displayedTitle": "C6",
+      "noQuickActions": true
+     },
+     "D6": {
+      "isHidden": "no",
+      "height": 9.5,
+      "alignment": "CENTER",
+      "displayedTitle": "D6",
+      "noQuickActions": true
+     },
+     "E6": {
+      "isHidden": "no",
+      "height": 9.5,
+      "alignment": "CENTER",
+      "displayedTitle": "E6",
+      "noQuickActions": true
+     },
+     "Halcyte": {
+      "isHidden": "no",
+      "height": 9,
+      "alignment": "START",
+      "displayedTitle": "Halcyte (available)",
+      "noQuickActions": false,
+      "isGroupForbidden": true
+     },
+     "Mana": {
+      "isHidden": "no",
+      "height": 9,
+      "alignment": "START",
+      "displayedTitle": "Halcyte supply",
+      "isGroupForbidden": true
+     }
+    }
+   }
+  }
+ },
+ "cards": {
+  "dataUrl": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/cards.json?v=1",
+  "cardBack": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/card-back.webp?v=1",
+  "cardBackColor": "#2a2440"
+ }
+}

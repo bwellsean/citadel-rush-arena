@@ -1,0 +1,493 @@
+[
+ {
+  "title": "Sentinels: Radiant Battery",
+  "id": "citadel-rush-sentinels-radiant-battery",
+  "cardCount": 40,
+  "createdAt": "2026-10-22T00:00:00.000Z",
+  "lastModifiedAt": "2026-10-22T00:00:00.000Z",
+  "game": "Citadel Rush",
+  "format": [
+   "Standard"
+  ],
+  "deckList": {
+   "categoriesOrder": [
+    "Runner",
+    "Trap",
+    "Upgrade",
+    "Protocol"
+   ],
+   "Runner": [
+    {
+     "count": 2,
+     "id": "conduit"
+    },
+    {
+     "count": 3,
+     "id": "ember"
+    },
+    {
+     "count": 3,
+     "id": "flashpoint"
+    },
+    {
+     "count": 3,
+     "id": "tinder"
+    },
+    {
+     "count": 3,
+     "id": "arc"
+    },
+    {
+     "count": 3,
+     "id": "spire"
+    },
+    {
+     "count": 3,
+     "id": "zenith"
+    },
+    {
+     "count": 1,
+     "id": "aria"
+    },
+    {
+     "count": 1,
+     "id": "faedra"
+    }
+   ],
+   "Trap": [
+    {
+     "count": 2,
+     "id": "ambush-alarm"
+    },
+    {
+     "count": 3,
+     "id": "suppression-mine"
+    },
+    {
+     "count": 2,
+     "id": "mirror-ward"
+    }
+   ],
+   "Upgrade": [
+    {
+     "count": 1,
+     "id": "halcyte-capacitor"
+    },
+    {
+     "count": 2,
+     "id": "overcharged-rounds"
+    },
+    {
+     "count": 3,
+     "id": "prism-focus"
+    }
+   ],
+   "Protocol": [
+    {
+     "count": 1,
+     "id": "field-intel"
+    },
+    {
+     "count": 3,
+     "id": "arc-flash"
+    },
+    {
+     "count": 1,
+     "id": "blinding-flare"
+    }
+   ]
+  }
+ },
+ {
+  "title": "Sentinels: Pathfinders",
+  "id": "citadel-rush-sentinels-pathfinders",
+  "cardCount": 40,
+  "createdAt": "2026-10-22T00:00:00.000Z",
+  "lastModifiedAt": "2026-10-22T00:00:00.000Z",
+  "game": "Citadel Rush",
+  "format": [
+   "Standard"
+  ],
+  "deckList": {
+   "categoriesOrder": [
+    "Runner",
+    "Trap",
+    "Upgrade",
+    "Protocol"
+   ],
+   "Runner": [
+    {
+     "count": 3,
+     "id": "waypoint"
+    },
+    {
+     "count": 2,
+     "id": "flashpoint"
+    },
+    {
+     "count": 1,
+     "id": "herald"
+    },
+    {
+     "count": 3,
+     "id": "geode"
+    },
+    {
+     "count": 3,
+     "id": "raider"
+    },
+    {
+     "count": 3,
+     "id": "tailwind"
+    },
+    {
+     "count": 3,
+     "id": "vault"
+    },
+    {
+     "count": 3,
+     "id": "avenger"
+    },
+    {
+     "count": 2,
+     "id": "spire"
+    },
+    {
+     "count": 1,
+     "id": "trailblazer"
+    },
+    {
+     "count": 1,
+     "id": "faedra"
+    }
+   ],
+   "Trap": [
+    {
+     "count": 2,
+     "id": "sanctuary-glyph"
+    },
+    {
+     "count": 3,
+     "id": "stasis-cage"
+    }
+   ],
+   "Upgrade": [
+    {
+     "count": 3,
+     "id": "courier-pack"
+    },
+    {
+     "count": 2,
+     "id": "rift-striders"
+    }
+   ],
+   "Protocol": [
+    {
+     "count": 2,
+     "id": "field-intel"
+    },
+    {
+     "count": 3,
+     "id": "breakaway"
+    }
+   ]
+  }
+ },
+ {
+  "title": "Syndicate: Drone Swarm",
+  "id": "citadel-rush-syndicate-drone-swarm",
+  "cardCount": 40,
+  "createdAt": "2026-10-22T00:00:00.000Z",
+  "lastModifiedAt": "2026-10-22T00:00:00.000Z",
+  "game": "Citadel Rush",
+  "format": [
+   "Standard"
+  ],
+  "deckList": {
+   "categoriesOrder": [
+    "Runner",
+    "Trap",
+    "Upgrade",
+    "Protocol"
+   ],
+   "Runner": [
+    {
+     "count": 3,
+     "id": "drone-pilot"
+    },
+    {
+     "count": 1,
+     "id": "relay-drone"
+    },
+    {
+     "count": 3,
+     "id": "swarm-drone"
+    },
+    {
+     "count": 3,
+     "id": "blink"
+    },
+    {
+     "count": 3,
+     "id": "hornet"
+    },
+    {
+     "count": 3,
+     "id": "anvil"
+    },
+    {
+     "count": 3,
+     "id": "scrapper"
+    },
+    {
+     "count": 3,
+     "id": "swarmcaller"
+    },
+    {
+     "count": 1,
+     "id": "hangar"
+    },
+    {
+     "count": 1,
+     "id": "leviathan"
+    }
+   ],
+   "Trap": [
+    {
+     "count": 3,
+     "id": "overload-coil"
+    },
+    {
+     "count": 2,
+     "id": "suppression-mine"
+    },
+    {
+     "count": 3,
+     "id": "blast-barricade"
+    },
+    {
+     "count": 2,
+     "id": "claymore"
+    }
+   ],
+   "Upgrade": [
+    {
+     "count": 3,
+     "id": "uplink-module"
+    },
+    {
+     "count": 2,
+     "id": "overcharged-rounds"
+    }
+   ],
+   "Protocol": [
+    {
+     "count": 1,
+     "id": "relay-beacon"
+    }
+   ]
+  }
+ },
+ {
+  "title": "Syndicate: Iron Line",
+  "id": "citadel-rush-syndicate-iron-line",
+  "cardCount": 40,
+  "createdAt": "2026-10-22T00:00:00.000Z",
+  "lastModifiedAt": "2026-10-22T00:00:00.000Z",
+  "game": "Citadel Rush",
+  "format": [
+   "Standard"
+  ],
+  "deckList": {
+   "categoriesOrder": [
+    "Runner",
+    "Trap",
+    "Upgrade",
+    "Protocol"
+   ],
+   "Runner": [
+    {
+     "count": 2,
+     "id": "blink"
+    },
+    {
+     "count": 3,
+     "id": "welder"
+    },
+    {
+     "count": 3,
+     "id": "anvil"
+    },
+    {
+     "count": 3,
+     "id": "ballast"
+    },
+    {
+     "count": 3,
+     "id": "lockstep"
+    },
+    {
+     "count": 3,
+     "id": "hammerhead"
+    },
+    {
+     "count": 3,
+     "id": "mortar"
+    },
+    {
+     "count": 3,
+     "id": "rampart"
+    },
+    {
+     "count": 1,
+     "id": "breaker"
+    },
+    {
+     "count": 1,
+     "id": "leviathan"
+    }
+   ],
+   "Trap": [
+    {
+     "count": 2,
+     "id": "overload-coil"
+    },
+    {
+     "count": 3,
+     "id": "claymore"
+    }
+   ],
+   "Upgrade": [
+    {
+     "count": 2,
+     "id": "emergency-stabilizer"
+    },
+    {
+     "count": 3,
+     "id": "heavy-plating"
+    },
+    {
+     "count": 2,
+     "id": "hardened-frame"
+    }
+   ],
+   "Protocol": [
+    {
+     "count": 3,
+     "id": "fortify"
+    }
+   ]
+  }
+ },
+ {
+  "title": "Syndicate: Rift Ambush",
+  "id": "citadel-rush-syndicate-rift-ambush",
+  "cardCount": 40,
+  "createdAt": "2026-10-22T00:00:00.000Z",
+  "lastModifiedAt": "2026-10-22T00:00:00.000Z",
+  "game": "Citadel Rush",
+  "format": [
+   "Standard"
+  ],
+  "deckList": {
+   "categoriesOrder": [
+    "Runner",
+    "Trap",
+    "Upgrade",
+    "Protocol"
+   ],
+   "Runner": [
+    {
+     "count": 3,
+     "id": "gremlin"
+    },
+    {
+     "count": 3,
+     "id": "hook"
+    },
+    {
+     "count": 3,
+     "id": "hornet"
+    },
+    {
+     "count": 2,
+     "id": "blink"
+    },
+    {
+     "count": 3,
+     "id": "anvil"
+    },
+    {
+     "count": 2,
+     "id": "lockstep"
+    },
+    {
+     "count": 1,
+     "id": "ballast"
+    },
+    {
+     "count": 2,
+     "id": "payload"
+    },
+    {
+     "count": 1,
+     "id": "bounty-hunter"
+    },
+    {
+     "count": 2,
+     "id": "the-wanderer"
+    },
+    {
+     "count": 1,
+     "id": "leviathan"
+    }
+   ],
+   "Trap": [
+    {
+     "count": 3,
+     "id": "suppression-mine"
+    },
+    {
+     "count": 2,
+     "id": "snare"
+    },
+    {
+     "count": 1,
+     "id": "claymore"
+    },
+    {
+     "count": 1,
+     "id": "overload-coil"
+    }
+   ],
+   "Upgrade": [
+    {
+     "count": 2,
+     "id": "overcharged-rounds"
+    },
+    {
+     "count": 2,
+     "id": "emergency-stabilizer"
+    },
+    {
+     "count": 1,
+     "id": "halcyte-capacitor"
+    }
+   ],
+   "Protocol": [
+    {
+     "count": 2,
+     "id": "field-intel"
+    },
+    {
+     "count": 2,
+     "id": "fortify"
+    },
+    {
+     "count": 1,
+     "id": "remote-detonation"
+    }
+   ]
+  }
+ }
+]

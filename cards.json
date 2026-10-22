@@ -1,0 +1,1899 @@
+{
+ "aegis": {
+  "id": "aegis",
+  "face": {
+   "front": {
+    "name": "Aegis",
+    "type": "Runner",
+    "cost": 3,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/aegis.webp?v=1"
+   }
+  },
+  "name": "Aegis",
+  "type": "Runner",
+  "cost": 3,
+  "faction": "Sentinels",
+  "rarity": "Rare",
+  "source": "Powered",
+  "role": "Tank",
+  "atk": 2,
+  "mov": 1,
+  "health": 3
+ },
+ "waypoint": {
+  "id": "waypoint",
+  "face": {
+   "front": {
+    "name": "Waypoint",
+    "type": "Runner",
+    "cost": 1,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/waypoint.webp?v=1"
+   }
+  },
+  "name": "Waypoint",
+  "type": "Runner",
+  "cost": 1,
+  "faction": "Sentinels",
+  "rarity": "Common",
+  "source": "Tech",
+  "role": "Scout",
+  "atk": 2,
+  "mov": 2,
+  "health": 2
+ },
+ "tinder": {
+  "id": "tinder",
+  "face": {
+   "front": {
+    "name": "Tinder",
+    "type": "Runner",
+    "cost": 3,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/tinder.webp?v=1"
+   }
+  },
+  "name": "Tinder",
+  "type": "Runner",
+  "cost": 3,
+  "faction": "Sentinels",
+  "rarity": "Common",
+  "source": "Powered",
+  "role": "Striker",
+  "atk": 3,
+  "mov": 1,
+  "health": 2
+ },
+ "zenith": {
+  "id": "zenith",
+  "face": {
+   "front": {
+    "name": "Zenith",
+    "type": "Runner",
+    "cost": 5,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/zenith.webp?v=1"
+   }
+  },
+  "name": "Zenith",
+  "type": "Runner",
+  "cost": 5,
+  "faction": "Sentinels",
+  "rarity": "Rare",
+  "source": "Powered",
+  "role": "Artillery",
+  "atk": 3,
+  "mov": 1,
+  "health": 2
+ },
+ "lumen": {
+  "id": "lumen",
+  "face": {
+   "front": {
+    "name": "Lumen",
+    "type": "Runner",
+    "cost": 1,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/lumen.webp?v=1"
+   }
+  },
+  "name": "Lumen",
+  "type": "Runner",
+  "cost": 1,
+  "faction": "Sentinels",
+  "rarity": "Common",
+  "source": "Powered",
+  "role": "Support",
+  "atk": 1,
+  "mov": 1,
+  "health": 2
+ },
+ "blink": {
+  "id": "blink",
+  "face": {
+   "front": {
+    "name": "Blink",
+    "type": "Runner",
+    "cost": 2,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/blink.webp?v=1"
+   }
+  },
+  "name": "Blink",
+  "type": "Runner",
+  "cost": 2,
+  "faction": "Syndicate",
+  "rarity": "Uncommon",
+  "source": "Powered",
+  "role": "Burst",
+  "atk": 4,
+  "mov": 1,
+  "health": 2
+ },
+ "anvil": {
+  "id": "anvil",
+  "face": {
+   "front": {
+    "name": "Anvil",
+    "type": "Runner",
+    "cost": 3,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/anvil.webp?v=1"
+   }
+  },
+  "name": "Anvil",
+  "type": "Runner",
+  "cost": 3,
+  "faction": "Syndicate",
+  "rarity": "Rare",
+  "source": "Tech",
+  "role": "Heavy ranged",
+  "atk": 4,
+  "mov": 1,
+  "health": 2
+ },
+ "lockstep": {
+  "id": "lockstep",
+  "face": {
+   "front": {
+    "name": "Lockstep",
+    "type": "Runner",
+    "cost": 3,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/lockstep.webp?v=1"
+   }
+  },
+  "name": "Lockstep",
+  "type": "Runner",
+  "cost": 3,
+  "faction": "Syndicate",
+  "rarity": "Common",
+  "source": "Tech",
+  "role": "Lane defender",
+  "atk": 2,
+  "mov": 1,
+  "health": 3
+ },
+ "gremlin": {
+  "id": "gremlin",
+  "face": {
+   "front": {
+    "name": "Gremlin",
+    "type": "Runner",
+    "cost": 1,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/gremlin.webp?v=1"
+   }
+  },
+  "name": "Gremlin",
+  "type": "Runner",
+  "cost": 1,
+  "faction": "Syndicate",
+  "rarity": "Common",
+  "source": "Tech",
+  "role": "Engineer",
+  "atk": 2,
+  "mov": 1,
+  "health": 2
+ },
+ "hornet": {
+  "id": "hornet",
+  "face": {
+   "front": {
+    "name": "Hornet",
+    "type": "Runner",
+    "cost": 2,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/hornet.webp?v=1"
+   }
+  },
+  "name": "Hornet",
+  "type": "Runner",
+  "cost": 2,
+  "faction": "Syndicate",
+  "rarity": "Common",
+  "source": "Tech",
+  "role": "Artillery",
+  "atk": 2,
+  "mov": 1,
+  "health": 2
+ },
+ "faedra": {
+  "id": "faedra",
+  "face": {
+   "front": {
+    "name": "Faedra",
+    "type": "Runner",
+    "cost": 6,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/faedra.webp?v=1"
+   }
+  },
+  "name": "Faedra",
+  "type": "Runner",
+  "cost": 6,
+  "faction": "Sentinels",
+  "rarity": "Champion",
+  "source": "Powered",
+  "role": "Champion",
+  "atk": 4,
+  "mov": 1,
+  "health": 4
+ },
+ "herald": {
+  "id": "herald",
+  "face": {
+   "front": {
+    "name": "Herald",
+    "type": "Runner",
+    "cost": 2,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/herald.webp?v=1"
+   }
+  },
+  "name": "Herald",
+  "type": "Runner",
+  "cost": 2,
+  "faction": "Sentinels",
+  "rarity": "Common",
+  "source": "Powered",
+  "role": "Courier",
+  "atk": 1,
+  "mov": 2,
+  "health": 2
+ },
+ "arc": {
+  "id": "arc",
+  "face": {
+   "front": {
+    "name": "Arc",
+    "type": "Runner",
+    "cost": 3,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/arc.webp?v=1"
+   }
+  },
+  "name": "Arc",
+  "type": "Runner",
+  "cost": 3,
+  "faction": "Sentinels",
+  "rarity": "Uncommon",
+  "source": "Powered",
+  "role": "Lancer",
+  "atk": 2,
+  "mov": 1,
+  "health": 2
+ },
+ "aria": {
+  "id": "aria",
+  "face": {
+   "front": {
+    "name": "Aria",
+    "type": "Runner",
+    "cost": 5,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/aria.webp?v=1"
+   }
+  },
+  "name": "Aria",
+  "type": "Runner",
+  "cost": 5,
+  "faction": "Sentinels",
+  "rarity": "Legendary",
+  "source": "Powered",
+  "role": "Burst",
+  "atk": 3,
+  "mov": 1,
+  "health": 2
+ },
+ "cadence": {
+  "id": "cadence",
+  "face": {
+   "front": {
+    "name": "Cadence",
+    "type": "Runner",
+    "cost": 2,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/cadence.webp?v=1"
+   }
+  },
+  "name": "Cadence",
+  "type": "Runner",
+  "cost": 2,
+  "faction": "Sentinels",
+  "rarity": "Common",
+  "source": "Tech",
+  "role": "Evac marshal",
+  "atk": 2,
+  "mov": 1,
+  "health": 2
+ },
+ "vault": {
+  "id": "vault",
+  "face": {
+   "front": {
+    "name": "Vault",
+    "type": "Runner",
+    "cost": 3,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/vault.webp?v=1"
+   }
+  },
+  "name": "Vault",
+  "type": "Runner",
+  "cost": 3,
+  "faction": "Sentinels",
+  "rarity": "Uncommon",
+  "source": "Powered",
+  "role": "Free-runner",
+  "atk": 2,
+  "mov": 2,
+  "health": 2
+ },
+ "bastion": {
+  "id": "bastion",
+  "face": {
+   "front": {
+    "name": "Bastion",
+    "type": "Runner",
+    "cost": 5,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/bastion.webp?v=1"
+   }
+  },
+  "name": "Bastion",
+  "type": "Runner",
+  "cost": 5,
+  "faction": "Sentinels",
+  "rarity": "Rare",
+  "source": "Powered",
+  "role": "Shield captain",
+  "atk": 3,
+  "mov": 1,
+  "health": 3
+ },
+ "spyglass": {
+  "id": "spyglass",
+  "face": {
+   "front": {
+    "name": "Spyglass",
+    "type": "Runner",
+    "cost": 1,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/spyglass.webp?v=1"
+   }
+  },
+  "name": "Spyglass",
+  "type": "Runner",
+  "cost": 1,
+  "faction": "Sentinels",
+  "rarity": "Common",
+  "source": "Powered",
+  "role": "Seer",
+  "atk": 1,
+  "mov": 2,
+  "health": 2
+ },
+ "leviathan": {
+  "id": "leviathan",
+  "face": {
+   "front": {
+    "name": "Leviathan",
+    "type": "Runner",
+    "cost": 6,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/leviathan.webp?v=1"
+   }
+  },
+  "name": "Leviathan",
+  "type": "Runner",
+  "cost": 6,
+  "faction": "Syndicate",
+  "rarity": "Champion",
+  "source": "Tech",
+  "role": "Champion",
+  "atk": 4,
+  "mov": 1,
+  "health": 4
+ },
+ "vantage": {
+  "id": "vantage",
+  "face": {
+   "front": {
+    "name": "Vantage",
+    "type": "Runner",
+    "cost": 2,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/vantage.webp?v=1"
+   }
+  },
+  "name": "Vantage",
+  "type": "Runner",
+  "cost": 2,
+  "faction": "Syndicate",
+  "rarity": "Uncommon",
+  "source": "Tech",
+  "role": "Spotter",
+  "atk": 1,
+  "mov": 1,
+  "health": 2
+ },
+ "tripwire": {
+  "id": "tripwire",
+  "face": {
+   "front": {
+    "name": "Tripwire",
+    "type": "Runner",
+    "cost": 3,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/tripwire.webp?v=1"
+   }
+  },
+  "name": "Tripwire",
+  "type": "Runner",
+  "cost": 3,
+  "faction": "Syndicate",
+  "rarity": "Common",
+  "source": "Tech",
+  "role": "Saboteur",
+  "atk": 1,
+  "mov": 1,
+  "health": 2
+ },
+ "sleight": {
+  "id": "sleight",
+  "face": {
+   "front": {
+    "name": "Sleight",
+    "type": "Runner",
+    "cost": 1,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/sleight.webp?v=1"
+   }
+  },
+  "name": "Sleight",
+  "type": "Runner",
+  "cost": 1,
+  "faction": "Syndicate",
+  "rarity": "Uncommon",
+  "source": "Tech",
+  "role": "Pickpocket",
+  "atk": 2,
+  "mov": 2,
+  "health": 2
+ },
+ "payload": {
+  "id": "payload",
+  "face": {
+   "front": {
+    "name": "Payload",
+    "type": "Runner",
+    "cost": 4,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/payload.webp?v=1"
+   }
+  },
+  "name": "Payload",
+  "type": "Runner",
+  "cost": 4,
+  "faction": "Syndicate",
+  "rarity": "Rare",
+  "source": "Tech",
+  "role": "Demolitionist",
+  "atk": 3,
+  "mov": 1,
+  "health": 2
+ },
+ "breaker": {
+  "id": "breaker",
+  "face": {
+   "front": {
+    "name": "Breaker",
+    "type": "Runner",
+    "cost": 6,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/breaker.webp?v=1"
+   }
+  },
+  "name": "Breaker",
+  "type": "Runner",
+  "cost": 6,
+  "faction": "Syndicate",
+  "rarity": "Legendary",
+  "source": "Tech",
+  "role": "Siege tank",
+  "atk": 3,
+  "mov": 1,
+  "health": 3
+ },
+ "hangar": {
+  "id": "hangar",
+  "face": {
+   "front": {
+    "name": "Hangar",
+    "type": "Runner",
+    "cost": 5,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/hangar.webp?v=1"
+   }
+  },
+  "name": "Hangar",
+  "type": "Runner",
+  "cost": 5,
+  "faction": "Syndicate",
+  "rarity": "Legendary",
+  "source": "Tech",
+  "role": "Carrier",
+  "atk": 3,
+  "mov": 1,
+  "health": 2
+ },
+ "drone-pilot": {
+  "id": "drone-pilot",
+  "face": {
+   "front": {
+    "name": "Drone Pilot",
+    "type": "Runner",
+    "cost": 1,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/drone-pilot.webp?v=1"
+   }
+  },
+  "name": "Drone Pilot",
+  "type": "Runner",
+  "cost": 1,
+  "faction": "Syndicate",
+  "rarity": "Common",
+  "source": "Tech",
+  "role": "Drone",
+  "atk": 1,
+  "mov": 1,
+  "health": 2
+ },
+ "swarm-drone": {
+  "id": "swarm-drone",
+  "face": {
+   "front": {
+    "name": "Swarm Drone",
+    "type": "Runner",
+    "cost": 1,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/swarm-drone.webp?v=1"
+   }
+  },
+  "name": "Swarm Drone",
+  "type": "Runner",
+  "cost": 1,
+  "faction": "Syndicate",
+  "rarity": "Common",
+  "source": "Tech",
+  "role": "Drone",
+  "atk": 1,
+  "mov": 2,
+  "health": 2
+ },
+ "hammerhead": {
+  "id": "hammerhead",
+  "face": {
+   "front": {
+    "name": "Hammerhead",
+    "type": "Runner",
+    "cost": 5,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/hammerhead.webp?v=1"
+   }
+  },
+  "name": "Hammerhead",
+  "type": "Runner",
+  "cost": 5,
+  "faction": "Syndicate",
+  "rarity": "Uncommon",
+  "source": "Tech",
+  "role": "Breacher",
+  "atk": 3,
+  "mov": 1,
+  "health": 3
+ },
+ "trailblazer": {
+  "id": "trailblazer",
+  "face": {
+   "front": {
+    "name": "Trailblazer",
+    "type": "Runner",
+    "cost": 5,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/trailblazer.webp?v=1"
+   }
+  },
+  "name": "Trailblazer",
+  "type": "Runner",
+  "cost": 5,
+  "faction": "Sentinels",
+  "rarity": "Legendary",
+  "source": "Tech",
+  "role": "Vanguard",
+  "atk": 3,
+  "mov": 2,
+  "health": 2
+ },
+ "flashpoint": {
+  "id": "flashpoint",
+  "face": {
+   "front": {
+    "name": "Flashpoint",
+    "type": "Runner",
+    "cost": 2,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/flashpoint.webp?v=1"
+   }
+  },
+  "name": "Flashpoint",
+  "type": "Runner",
+  "cost": 2,
+  "faction": "Sentinels",
+  "rarity": "Uncommon",
+  "source": "Powered",
+  "role": "Flash striker",
+  "atk": 2,
+  "mov": 1,
+  "health": 2
+ },
+ "mortar": {
+  "id": "mortar",
+  "face": {
+   "front": {
+    "name": "Mortar",
+    "type": "Runner",
+    "cost": 4,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/mortar.webp?v=1"
+   }
+  },
+  "name": "Mortar",
+  "type": "Runner",
+  "cost": 4,
+  "faction": "Syndicate",
+  "rarity": "Uncommon",
+  "source": "Tech",
+  "role": "Siege gunner",
+  "atk": 3,
+  "mov": 1,
+  "health": 2
+ },
+ "spire": {
+  "id": "spire",
+  "face": {
+   "front": {
+    "name": "Spire",
+    "type": "Runner",
+    "cost": 4,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/spire.webp?v=1"
+   }
+  },
+  "name": "Spire",
+  "type": "Runner",
+  "cost": 4,
+  "faction": "Sentinels",
+  "rarity": "Uncommon",
+  "source": "Powered",
+  "role": "Armor-piercer",
+  "atk": 3,
+  "mov": 1,
+  "health": 2
+ },
+ "hook": {
+  "id": "hook",
+  "face": {
+   "front": {
+    "name": "Hook",
+    "type": "Runner",
+    "cost": 2,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/hook.webp?v=1"
+   }
+  },
+  "name": "Hook",
+  "type": "Runner",
+  "cost": 2,
+  "faction": "Syndicate",
+  "rarity": "Common",
+  "source": "Tech",
+  "role": "Wrangler",
+  "atk": 2,
+  "mov": 1,
+  "health": 2
+ },
+ "sapper": {
+  "id": "sapper",
+  "face": {
+   "front": {
+    "name": "Sapper",
+    "type": "Runner",
+    "cost": 5,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/sapper.webp?v=1"
+   }
+  },
+  "name": "Sapper",
+  "type": "Runner",
+  "cost": 5,
+  "faction": "Syndicate",
+  "rarity": "Legendary",
+  "source": "Tech",
+  "role": "Combat engineer",
+  "atk": 3,
+  "mov": 1,
+  "health": 2
+ },
+ "riposte": {
+  "id": "riposte",
+  "face": {
+   "front": {
+    "name": "Riposte",
+    "type": "Runner",
+    "cost": 4,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/riposte.webp?v=1"
+   }
+  },
+  "name": "Riposte",
+  "type": "Runner",
+  "cost": 4,
+  "faction": "Sentinels",
+  "rarity": "Uncommon",
+  "source": "Powered",
+  "role": "Duelist guard",
+  "atk": 2,
+  "mov": 1,
+  "health": 3
+ },
+ "tailwind": {
+  "id": "tailwind",
+  "face": {
+   "front": {
+    "name": "Tailwind",
+    "type": "Runner",
+    "cost": 3,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/tailwind.webp?v=1"
+   }
+  },
+  "name": "Tailwind",
+  "type": "Runner",
+  "cost": 3,
+  "faction": "Sentinels",
+  "rarity": "Uncommon",
+  "source": "Powered",
+  "role": "Wind guide",
+  "atk": 2,
+  "mov": 1,
+  "health": 2
+ },
+ "relay-drone": {
+  "id": "relay-drone",
+  "face": {
+   "front": {
+    "name": "Relay Drone",
+    "type": "Runner",
+    "cost": 1,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/relay-drone.webp?v=1"
+   }
+  },
+  "name": "Relay Drone",
+  "type": "Runner",
+  "cost": 1,
+  "faction": "Syndicate",
+  "rarity": "Common",
+  "source": "Tech",
+  "role": "Drone",
+  "atk": 1,
+  "mov": 2,
+  "health": 2
+ },
+ "scrapper": {
+  "id": "scrapper",
+  "face": {
+   "front": {
+    "name": "Scrapper",
+    "type": "Runner",
+    "cost": 3,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/scrapper.webp?v=1"
+   }
+  },
+  "name": "Scrapper",
+  "type": "Runner",
+  "cost": 3,
+  "faction": "Syndicate",
+  "rarity": "Uncommon",
+  "source": "Tech",
+  "role": "Drone mechanic",
+  "atk": 2,
+  "mov": 1,
+  "health": 2
+ },
+ "swarmcaller": {
+  "id": "swarmcaller",
+  "face": {
+   "front": {
+    "name": "Swarmcaller",
+    "type": "Runner",
+    "cost": 4,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/swarmcaller.webp?v=1"
+   }
+  },
+  "name": "Swarmcaller",
+  "type": "Runner",
+  "cost": 4,
+  "faction": "Syndicate",
+  "rarity": "Rare",
+  "source": "Tech",
+  "role": "Swarm commander",
+  "atk": 3,
+  "mov": 1,
+  "health": 2
+ },
+ "warden": {
+  "id": "warden",
+  "face": {
+   "front": {
+    "name": "Warden",
+    "type": "Runner",
+    "cost": 5,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/warden.webp?v=1"
+   }
+  },
+  "name": "Warden",
+  "type": "Runner",
+  "cost": 5,
+  "faction": "Sentinels",
+  "rarity": "Legendary",
+  "source": "Powered",
+  "role": "Line holder",
+  "atk": 3,
+  "mov": 1,
+  "health": 3
+ },
+ "shield-recruit": {
+  "id": "shield-recruit",
+  "face": {
+   "front": {
+    "name": "Shield Recruit",
+    "type": "Runner",
+    "cost": 1,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/shield-recruit.webp?v=1"
+   }
+  },
+  "name": "Shield Recruit",
+  "type": "Runner",
+  "cost": 1,
+  "faction": "Sentinels",
+  "rarity": "Common",
+  "source": "Tech",
+  "role": "Recruit",
+  "atk": 1,
+  "mov": 1,
+  "health": 2
+ },
+ "stalwart-recruit": {
+  "id": "stalwart-recruit",
+  "face": {
+   "front": {
+    "name": "Stalwart Recruit",
+    "type": "Runner",
+    "cost": 1,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/stalwart-recruit.webp?v=1"
+   }
+  },
+  "name": "Stalwart Recruit",
+  "type": "Runner",
+  "cost": 1,
+  "faction": "Sentinels",
+  "rarity": "Common",
+  "source": "Tech",
+  "role": "Recruit",
+  "atk": 1,
+  "mov": 1,
+  "health": 2
+ },
+ "conduit": {
+  "id": "conduit",
+  "face": {
+   "front": {
+    "name": "Conduit",
+    "type": "Runner",
+    "cost": 1,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/conduit.webp?v=1"
+   }
+  },
+  "name": "Conduit",
+  "type": "Runner",
+  "cost": 1,
+  "faction": "Sentinels",
+  "rarity": "Common",
+  "source": "Powered",
+  "role": "Channeler",
+  "atk": 1,
+  "mov": 1,
+  "health": 2
+ },
+ "spool": {
+  "id": "spool",
+  "face": {
+   "front": {
+    "name": "Spool",
+    "type": "Runner",
+    "cost": 2,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/spool.webp?v=1"
+   }
+  },
+  "name": "Spool",
+  "type": "Runner",
+  "cost": 2,
+  "faction": "Syndicate",
+  "rarity": "Uncommon",
+  "source": "Tech",
+  "role": "Trap recycler",
+  "atk": 2,
+  "mov": 1,
+  "health": 2
+ },
+ "avenger": {
+  "id": "avenger",
+  "face": {
+   "front": {
+    "name": "Avenger",
+    "type": "Runner",
+    "cost": 4,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/avenger.webp?v=1"
+   }
+  },
+  "name": "Avenger",
+  "type": "Runner",
+  "cost": 4,
+  "faction": "Sentinels",
+  "rarity": "Uncommon",
+  "source": "Powered",
+  "role": "Avenger",
+  "atk": 3,
+  "mov": 1,
+  "health": 2
+ },
+ "ember": {
+  "id": "ember",
+  "face": {
+   "front": {
+    "name": "Ember",
+    "type": "Runner",
+    "cost": 2,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/ember.webp?v=1"
+   }
+  },
+  "name": "Ember",
+  "type": "Runner",
+  "cost": 2,
+  "faction": "Sentinels",
+  "rarity": "Common",
+  "source": "Powered",
+  "role": "Field healer",
+  "atk": 2,
+  "mov": 1,
+  "health": 2
+ },
+ "geode": {
+  "id": "geode",
+  "face": {
+   "front": {
+    "name": "Geode",
+    "type": "Runner",
+    "cost": 3,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/geode.webp?v=1"
+   }
+  },
+  "name": "Geode",
+  "type": "Runner",
+  "cost": 3,
+  "faction": "Sentinels",
+  "rarity": "Common",
+  "source": "Powered",
+  "role": "Trap prospector",
+  "atk": 2,
+  "mov": 1,
+  "health": 2
+ },
+ "raider": {
+  "id": "raider",
+  "face": {
+   "front": {
+    "name": "Raider",
+    "type": "Runner",
+    "cost": 3,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/raider.webp?v=1"
+   }
+  },
+  "name": "Raider",
+  "type": "Runner",
+  "cost": 3,
+  "faction": "Sentinels",
+  "rarity": "Rare",
+  "source": "Tech",
+  "role": "Deep striker",
+  "atk": 3,
+  "mov": 2,
+  "health": 2
+ },
+ "welder": {
+  "id": "welder",
+  "face": {
+   "front": {
+    "name": "Welder",
+    "type": "Runner",
+    "cost": 2,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/welder.webp?v=1"
+   }
+  },
+  "name": "Welder",
+  "type": "Runner",
+  "cost": 2,
+  "faction": "Syndicate",
+  "rarity": "Common",
+  "source": "Tech",
+  "role": "Field repair tech",
+  "atk": 2,
+  "mov": 1,
+  "health": 2
+ },
+ "ballast": {
+  "id": "ballast",
+  "face": {
+   "front": {
+    "name": "Ballast",
+    "type": "Runner",
+    "cost": 3,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/ballast.webp?v=1"
+   }
+  },
+  "name": "Ballast",
+  "type": "Runner",
+  "cost": 3,
+  "faction": "Syndicate",
+  "rarity": "Common",
+  "source": "Tech",
+  "role": "Line trooper",
+  "atk": 2,
+  "mov": 1,
+  "health": 2
+ },
+ "rampart": {
+  "id": "rampart",
+  "face": {
+   "front": {
+    "name": "Rampart",
+    "type": "Runner",
+    "cost": 4,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/rampart.webp?v=1"
+   }
+  },
+  "name": "Rampart",
+  "type": "Runner",
+  "cost": 4,
+  "faction": "Syndicate",
+  "rarity": "Uncommon",
+  "source": "Tech",
+  "role": "Shield bearer",
+  "atk": 2,
+  "mov": 1,
+  "health": 3
+ },
+ "cutter": {
+  "id": "cutter",
+  "face": {
+   "front": {
+    "name": "Cutter",
+    "type": "Runner",
+    "cost": 3,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/cutter.webp?v=1"
+   }
+  },
+  "name": "Cutter",
+  "type": "Runner",
+  "cost": 3,
+  "faction": "Syndicate",
+  "rarity": "Rare",
+  "source": "Tech",
+  "role": "Trap hacker",
+  "atk": 2,
+  "mov": 2,
+  "health": 2
+ },
+ "pilfer": {
+  "id": "pilfer",
+  "face": {
+   "front": {
+    "name": "Pilfer",
+    "type": "Runner",
+    "cost": 2,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/pilfer.webp?v=1"
+   }
+  },
+  "name": "Pilfer",
+  "type": "Runner",
+  "cost": 2,
+  "faction": "Neutral",
+  "rarity": "Uncommon",
+  "source": "Tech",
+  "role": "Gear thief",
+  "atk": 2,
+  "mov": 1,
+  "health": 2
+ },
+ "sellsword": {
+  "id": "sellsword",
+  "face": {
+   "front": {
+    "name": "Sellsword",
+    "type": "Runner",
+    "cost": 3,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/sellsword.webp?v=1"
+   }
+  },
+  "name": "Sellsword",
+  "type": "Runner",
+  "cost": 3,
+  "faction": "Neutral",
+  "rarity": "Common",
+  "source": "Tech",
+  "role": "Lone mercenary",
+  "atk": 2,
+  "mov": 1,
+  "health": 2
+ },
+ "bounty-hunter": {
+  "id": "bounty-hunter",
+  "face": {
+   "front": {
+    "name": "Bounty Hunter",
+    "type": "Runner",
+    "cost": 4,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/bounty-hunter.webp?v=1"
+   }
+  },
+  "name": "Bounty Hunter",
+  "type": "Runner",
+  "cost": 4,
+  "faction": "Neutral",
+  "rarity": "Rare",
+  "source": "Tech",
+  "role": "Bounty hunter",
+  "atk": 3,
+  "mov": 1,
+  "health": 2
+ },
+ "the-wanderer": {
+  "id": "the-wanderer",
+  "face": {
+   "front": {
+    "name": "The Wanderer",
+    "type": "Runner",
+    "cost": 5,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/the-wanderer.webp?v=1"
+   }
+  },
+  "name": "The Wanderer",
+  "type": "Runner",
+  "cost": 5,
+  "faction": "Neutral",
+  "rarity": "Legendary",
+  "source": "Powered",
+  "role": "Rift-walker",
+  "atk": 3,
+  "mov": 1,
+  "health": 3
+ },
+ "ambush-alarm": {
+  "id": "ambush-alarm",
+  "face": {
+   "front": {
+    "name": "Ambush Alarm",
+    "type": "Trap",
+    "cost": 1,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/ambush-alarm.webp?v=1"
+   }
+  },
+  "name": "Ambush Alarm",
+  "type": "Trap",
+  "cost": 1,
+  "faction": "Neutral",
+  "rarity": "Common"
+ },
+ "suppression-mine": {
+  "id": "suppression-mine",
+  "face": {
+   "front": {
+    "name": "Suppression Mine",
+    "type": "Trap",
+    "cost": 1,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/suppression-mine.webp?v=1"
+   }
+  },
+  "name": "Suppression Mine",
+  "type": "Trap",
+  "cost": 1,
+  "faction": "Neutral",
+  "rarity": "Common"
+ },
+ "frag-mine": {
+  "id": "frag-mine",
+  "face": {
+   "front": {
+    "name": "Frag Mine",
+    "type": "Trap",
+    "cost": 2,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/frag-mine.webp?v=1"
+   }
+  },
+  "name": "Frag Mine",
+  "type": "Trap",
+  "cost": 2,
+  "faction": "Neutral",
+  "rarity": "Common"
+ },
+ "repulsor-plate": {
+  "id": "repulsor-plate",
+  "face": {
+   "front": {
+    "name": "Repulsor Plate",
+    "type": "Trap",
+    "cost": 1,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/repulsor-plate.webp?v=1"
+   }
+  },
+  "name": "Repulsor Plate",
+  "type": "Trap",
+  "cost": 1,
+  "faction": "Neutral",
+  "rarity": "Common"
+ },
+ "emp-spike": {
+  "id": "emp-spike",
+  "face": {
+   "front": {
+    "name": "EMP Spike",
+    "type": "Trap",
+    "cost": 1,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/emp-spike.webp?v=1"
+   }
+  },
+  "name": "EMP Spike",
+  "type": "Trap",
+  "cost": 1,
+  "faction": "Neutral",
+  "rarity": "Common"
+ },
+ "drain-spike": {
+  "id": "drain-spike",
+  "face": {
+   "front": {
+    "name": "Drain Spike",
+    "type": "Trap",
+    "cost": 1,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/drain-spike.webp?v=1"
+   }
+  },
+  "name": "Drain Spike",
+  "type": "Trap",
+  "cost": 1,
+  "faction": "Neutral",
+  "rarity": "Uncommon"
+ },
+ "decoy": {
+  "id": "decoy",
+  "face": {
+   "front": {
+    "name": "Decoy",
+    "type": "Trap",
+    "cost": 1,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/decoy.webp?v=1"
+   }
+  },
+  "name": "Decoy",
+  "type": "Trap",
+  "cost": 1,
+  "faction": "Neutral",
+  "rarity": "Uncommon"
+ },
+ "snare": {
+  "id": "snare",
+  "face": {
+   "front": {
+    "name": "Snare",
+    "type": "Trap",
+    "cost": 1,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/snare.webp?v=1"
+   }
+  },
+  "name": "Snare",
+  "type": "Trap",
+  "cost": 1,
+  "faction": "Neutral",
+  "rarity": "Common"
+ },
+ "rift-tear": {
+  "id": "rift-tear",
+  "face": {
+   "front": {
+    "name": "Rift Tear",
+    "type": "Trap",
+    "cost": 3,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/rift-tear.webp?v=1"
+   }
+  },
+  "name": "Rift Tear",
+  "type": "Trap",
+  "cost": 3,
+  "faction": "Neutral",
+  "rarity": "Rare"
+ },
+ "halcyte-leak": {
+  "id": "halcyte-leak",
+  "face": {
+   "front": {
+    "name": "Halcyte Leak",
+    "type": "Trap",
+    "cost": 2,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/halcyte-leak.webp?v=1"
+   }
+  },
+  "name": "Halcyte Leak",
+  "type": "Trap",
+  "cost": 2,
+  "faction": "Neutral",
+  "rarity": "Uncommon"
+ },
+ "sanctuary-glyph": {
+  "id": "sanctuary-glyph",
+  "face": {
+   "front": {
+    "name": "Sanctuary Glyph",
+    "type": "Trap",
+    "cost": 1,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/sanctuary-glyph.webp?v=1"
+   }
+  },
+  "name": "Sanctuary Glyph",
+  "type": "Trap",
+  "cost": 1,
+  "faction": "Sentinels",
+  "rarity": "Common"
+ },
+ "mirror-ward": {
+  "id": "mirror-ward",
+  "face": {
+   "front": {
+    "name": "Mirror Ward",
+    "type": "Trap",
+    "cost": 2,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/mirror-ward.webp?v=1"
+   }
+  },
+  "name": "Mirror Ward",
+  "type": "Trap",
+  "cost": 2,
+  "faction": "Sentinels",
+  "rarity": "Uncommon"
+ },
+ "stasis-cage": {
+  "id": "stasis-cage",
+  "face": {
+   "front": {
+    "name": "Stasis Cage",
+    "type": "Trap",
+    "cost": 2,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/stasis-cage.webp?v=1"
+   }
+  },
+  "name": "Stasis Cage",
+  "type": "Trap",
+  "cost": 2,
+  "faction": "Sentinels",
+  "rarity": "Rare"
+ },
+ "claymore": {
+  "id": "claymore",
+  "face": {
+   "front": {
+    "name": "Claymore",
+    "type": "Trap",
+    "cost": 2,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/claymore.webp?v=1"
+   }
+  },
+  "name": "Claymore",
+  "type": "Trap",
+  "cost": 2,
+  "faction": "Syndicate",
+  "rarity": "Uncommon"
+ },
+ "overload-coil": {
+  "id": "overload-coil",
+  "face": {
+   "front": {
+    "name": "Overload Coil",
+    "type": "Trap",
+    "cost": 1,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/overload-coil.webp?v=1"
+   }
+  },
+  "name": "Overload Coil",
+  "type": "Trap",
+  "cost": 1,
+  "faction": "Syndicate",
+  "rarity": "Common"
+ },
+ "blast-barricade": {
+  "id": "blast-barricade",
+  "face": {
+   "front": {
+    "name": "Blast Barricade",
+    "type": "Trap",
+    "cost": 2,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/blast-barricade.webp?v=1"
+   }
+  },
+  "name": "Blast Barricade",
+  "type": "Trap",
+  "cost": 2,
+  "faction": "Syndicate",
+  "rarity": "Rare"
+ },
+ "heros-sacrifice": {
+  "id": "heros-sacrifice",
+  "face": {
+   "front": {
+    "name": "Hero's Sacrifice",
+    "type": "Protocol",
+    "cost": 2,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/heros-sacrifice.webp?v=1"
+   }
+  },
+  "name": "Hero's Sacrifice",
+  "type": "Protocol",
+  "cost": 2,
+  "faction": "Neutral",
+  "rarity": "Rare"
+ },
+ "shield-wall": {
+  "id": "shield-wall",
+  "face": {
+   "front": {
+    "name": "Shield Wall",
+    "type": "Protocol",
+    "cost": 1,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/shield-wall.webp?v=1"
+   }
+  },
+  "name": "Shield Wall",
+  "type": "Protocol",
+  "cost": 1,
+  "faction": "Sentinels",
+  "rarity": "Common"
+ },
+ "breakaway": {
+  "id": "breakaway",
+  "face": {
+   "front": {
+    "name": "Breakaway",
+    "type": "Protocol",
+    "cost": 2,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/breakaway.webp?v=1"
+   }
+  },
+  "name": "Breakaway",
+  "type": "Protocol",
+  "cost": 2,
+  "faction": "Sentinels",
+  "rarity": "Common"
+ },
+ "blinding-flare": {
+  "id": "blinding-flare",
+  "face": {
+   "front": {
+    "name": "Blinding Flare",
+    "type": "Protocol",
+    "cost": 2,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/blinding-flare.webp?v=1"
+   }
+  },
+  "name": "Blinding Flare",
+  "type": "Protocol",
+  "cost": 2,
+  "faction": "Sentinels",
+  "rarity": "Rare"
+ },
+ "arc-flash": {
+  "id": "arc-flash",
+  "face": {
+   "front": {
+    "name": "Arc Flash",
+    "type": "Protocol",
+    "cost": 2,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/arc-flash.webp?v=1"
+   }
+  },
+  "name": "Arc Flash",
+  "type": "Protocol",
+  "cost": 2,
+  "faction": "Sentinels",
+  "rarity": "Common"
+ },
+ "relay-beacon": {
+  "id": "relay-beacon",
+  "face": {
+   "front": {
+    "name": "Relay Beacon",
+    "type": "Protocol",
+    "cost": 2,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/relay-beacon.webp?v=1"
+   }
+  },
+  "name": "Relay Beacon",
+  "type": "Protocol",
+  "cost": 2,
+  "faction": "Syndicate",
+  "rarity": "Common"
+ },
+ "rearm": {
+  "id": "rearm",
+  "face": {
+   "front": {
+    "name": "Rearm",
+    "type": "Protocol",
+    "cost": 2,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/rearm.webp?v=1"
+   }
+  },
+  "name": "Rearm",
+  "type": "Protocol",
+  "cost": 2,
+  "faction": "Syndicate",
+  "rarity": "Common"
+ },
+ "fortify": {
+  "id": "fortify",
+  "face": {
+   "front": {
+    "name": "Fortify",
+    "type": "Protocol",
+    "cost": 2,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/fortify.webp?v=1"
+   }
+  },
+  "name": "Fortify",
+  "type": "Protocol",
+  "cost": 2,
+  "faction": "Syndicate",
+  "rarity": "Common"
+ },
+ "rift-step": {
+  "id": "rift-step",
+  "face": {
+   "front": {
+    "name": "Rift Step",
+    "type": "Protocol",
+    "cost": 2,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/rift-step.webp?v=1"
+   }
+  },
+  "name": "Rift Step",
+  "type": "Protocol",
+  "cost": 2,
+  "faction": "Syndicate",
+  "rarity": "Rare"
+ },
+ "remote-detonation": {
+  "id": "remote-detonation",
+  "face": {
+   "front": {
+    "name": "Remote Detonation",
+    "type": "Protocol",
+    "cost": 2,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/remote-detonation.webp?v=1"
+   }
+  },
+  "name": "Remote Detonation",
+  "type": "Protocol",
+  "cost": 2,
+  "faction": "Neutral",
+  "rarity": "Uncommon"
+ },
+ "field-intel": {
+  "id": "field-intel",
+  "face": {
+   "front": {
+    "name": "Field Intel",
+    "type": "Protocol",
+    "cost": 1,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/field-intel.webp?v=1"
+   }
+  },
+  "name": "Field Intel",
+  "type": "Protocol",
+  "cost": 1,
+  "faction": "Neutral",
+  "rarity": "Common"
+ },
+ "requisition": {
+  "id": "requisition",
+  "face": {
+   "front": {
+    "name": "Requisition",
+    "type": "Protocol",
+    "cost": 2,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/requisition.webp?v=1"
+   }
+  },
+  "name": "Requisition",
+  "type": "Protocol",
+  "cost": 2,
+  "faction": "Neutral",
+  "rarity": "Uncommon"
+ },
+ "patch-up": {
+  "id": "patch-up",
+  "face": {
+   "front": {
+    "name": "Patch Up",
+    "type": "Protocol",
+    "cost": 1,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/patch-up.webp?v=1"
+   }
+  },
+  "name": "Patch Up",
+  "type": "Protocol",
+  "cost": 1,
+  "faction": "Neutral",
+  "rarity": "Common"
+ },
+ "smoke-screen": {
+  "id": "smoke-screen",
+  "face": {
+   "front": {
+    "name": "Smoke Screen",
+    "type": "Protocol",
+    "cost": 2,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/smoke-screen.webp?v=1"
+   }
+  },
+  "name": "Smoke Screen",
+  "type": "Protocol",
+  "cost": 2,
+  "faction": "Neutral",
+  "rarity": "Uncommon"
+ },
+ "overcharged-rounds": {
+  "id": "overcharged-rounds",
+  "face": {
+   "front": {
+    "name": "Overcharged Rounds",
+    "type": "Upgrade",
+    "cost": 2,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/overcharged-rounds.webp?v=1"
+   }
+  },
+  "name": "Overcharged Rounds",
+  "type": "Upgrade",
+  "cost": 2,
+  "faction": "Neutral",
+  "rarity": "Uncommon"
+ },
+ "hardened-frame": {
+  "id": "hardened-frame",
+  "face": {
+   "front": {
+    "name": "Hardened Frame",
+    "type": "Upgrade",
+    "cost": 2,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/hardened-frame.webp?v=1"
+   }
+  },
+  "name": "Hardened Frame",
+  "type": "Upgrade",
+  "cost": 2,
+  "faction": "Neutral",
+  "rarity": "Uncommon"
+ },
+ "rift-striders": {
+  "id": "rift-striders",
+  "face": {
+   "front": {
+    "name": "Rift Striders",
+    "type": "Upgrade",
+    "cost": 1,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/rift-striders.webp?v=1"
+   }
+  },
+  "name": "Rift Striders",
+  "type": "Upgrade",
+  "cost": 1,
+  "faction": "Neutral",
+  "rarity": "Common"
+ },
+ "emergency-stabilizer": {
+  "id": "emergency-stabilizer",
+  "face": {
+   "front": {
+    "name": "Emergency Stabilizer",
+    "type": "Upgrade",
+    "cost": 1,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/emergency-stabilizer.webp?v=1"
+   }
+  },
+  "name": "Emergency Stabilizer",
+  "type": "Upgrade",
+  "cost": 1,
+  "faction": "Neutral",
+  "rarity": "Uncommon"
+ },
+ "field-radio": {
+  "id": "field-radio",
+  "face": {
+   "front": {
+    "name": "Field Radio",
+    "type": "Upgrade",
+    "cost": 1,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/field-radio.webp?v=1"
+   }
+  },
+  "name": "Field Radio",
+  "type": "Upgrade",
+  "cost": 1,
+  "faction": "Neutral",
+  "rarity": "Common"
+ },
+ "medkit": {
+  "id": "medkit",
+  "face": {
+   "front": {
+    "name": "Medkit",
+    "type": "Upgrade",
+    "cost": 1,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/medkit.webp?v=1"
+   }
+  },
+  "name": "Medkit",
+  "type": "Upgrade",
+  "cost": 1,
+  "faction": "Neutral",
+  "rarity": "Common"
+ },
+ "recon-visor": {
+  "id": "recon-visor",
+  "face": {
+   "front": {
+    "name": "Recon Visor",
+    "type": "Upgrade",
+    "cost": 1,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/recon-visor.webp?v=1"
+   }
+  },
+  "name": "Recon Visor",
+  "type": "Upgrade",
+  "cost": 1,
+  "faction": "Neutral",
+  "rarity": "Common"
+ },
+ "halcyte-capacitor": {
+  "id": "halcyte-capacitor",
+  "face": {
+   "front": {
+    "name": "Halcyte Capacitor",
+    "type": "Upgrade",
+    "cost": 2,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/halcyte-capacitor.webp?v=1"
+   }
+  },
+  "name": "Halcyte Capacitor",
+  "type": "Upgrade",
+  "cost": 2,
+  "faction": "Neutral",
+  "rarity": "Rare"
+ },
+ "ward-banner": {
+  "id": "ward-banner",
+  "face": {
+   "front": {
+    "name": "Ward Banner",
+    "type": "Upgrade",
+    "cost": 2,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/ward-banner.webp?v=1"
+   }
+  },
+  "name": "Ward Banner",
+  "type": "Upgrade",
+  "cost": 2,
+  "faction": "Sentinels",
+  "rarity": "Rare"
+ },
+ "courier-pack": {
+  "id": "courier-pack",
+  "face": {
+   "front": {
+    "name": "Courier Pack",
+    "type": "Upgrade",
+    "cost": 1,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/courier-pack.webp?v=1"
+   }
+  },
+  "name": "Courier Pack",
+  "type": "Upgrade",
+  "cost": 1,
+  "faction": "Sentinels",
+  "rarity": "Common"
+ },
+ "prism-focus": {
+  "id": "prism-focus",
+  "face": {
+   "front": {
+    "name": "Prism Focus",
+    "type": "Upgrade",
+    "cost": 2,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/prism-focus.webp?v=1"
+   }
+  },
+  "name": "Prism Focus",
+  "type": "Upgrade",
+  "cost": 2,
+  "faction": "Sentinels",
+  "rarity": "Uncommon"
+ },
+ "uplink-module": {
+  "id": "uplink-module",
+  "face": {
+   "front": {
+    "name": "Uplink Module",
+    "type": "Upgrade",
+    "cost": 1,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/uplink-module.webp?v=1"
+   }
+  },
+  "name": "Uplink Module",
+  "type": "Upgrade",
+  "cost": 1,
+  "faction": "Syndicate",
+  "rarity": "Common"
+ },
+ "charge-bandolier": {
+  "id": "charge-bandolier",
+  "face": {
+   "front": {
+    "name": "Charge Bandolier",
+    "type": "Upgrade",
+    "cost": 1,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/charge-bandolier.webp?v=1"
+   }
+  },
+  "name": "Charge Bandolier",
+  "type": "Upgrade",
+  "cost": 1,
+  "faction": "Syndicate",
+  "rarity": "Common"
+ },
+ "heavy-plating": {
+  "id": "heavy-plating",
+  "face": {
+   "front": {
+    "name": "Heavy Plating",
+    "type": "Upgrade",
+    "cost": 3,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/heavy-plating.webp?v=1"
+   }
+  },
+  "name": "Heavy Plating",
+  "type": "Upgrade",
+  "cost": 3,
+  "faction": "Syndicate",
+  "rarity": "Rare"
+ },
+ "halcyte": {
+  "id": "halcyte",
+  "isToken": true,
+  "face": {
+   "front": {
+    "name": "Halcyte",
+    "type": "Halcyte",
+    "cost": 0,
+    "image": "https://raw.githubusercontent.com/bwellsean/citadel-rush-arena/main/images/cards/halcyte.webp?v=1"
+   }
+  },
+  "name": "Halcyte",
+  "type": "Halcyte",
+  "cost": 0,
+  "faction": "Neutral",
+  "rarity": "Common"
+ }
+}
